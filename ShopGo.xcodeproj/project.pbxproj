@@ -16,6 +16,12 @@
 		3907C9E328D804EF00019482 /* ShopGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9E228D804EF00019482 /* ShopGoTests.swift */; };
 		3907C9ED28D804EF00019482 /* ShopGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9EC28D804EF00019482 /* ShopGoUITests.swift */; };
 		3907C9EF28D804EF00019482 /* ShopGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */; };
+		5962F94B28D985710093CA4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5962F94A28D985710093CA4D /* GoogleService-Info.plist */; };
+		5962F94C28D985710093CA4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5962F94A28D985710093CA4D /* GoogleService-Info.plist */; };
+		5962F94D28D985710093CA4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5962F94A28D985710093CA4D /* GoogleService-Info.plist */; };
+		5962F95828DA415E0093CA4D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5962F95728DA415E0093CA4D /* FirebaseAnalytics */; };
+		5962F95A28DA415E0093CA4D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5962F95928DA415E0093CA4D /* FirebaseAnalyticsSwift */; };
+		5962F95C28DA415E0093CA4D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5962F95B28DA415E0093CA4D /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,7 @@
 		3907C9E828D804EF00019482 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3907C9EC28D804EF00019482 /* ShopGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITests.swift; sourceTree = "<group>"; };
 		3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5962F94A28D985710093CA4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5962F95C28DA415E0093CA4D /* FirebaseCrashlytics in Frameworks */,
+				5962F95A28DA415E0093CA4D /* FirebaseAnalyticsSwift in Frameworks */,
+				5962F95828DA415E0093CA4D /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,7 @@
 				3907C9D128D804ED00019482 /* Main.storyboard */,
 				3907C9D428D804EE00019482 /* Assets.xcassets */,
 				3907C9D628D804EE00019482 /* LaunchScreen.storyboard */,
+				5962F94A28D985710093CA4D /* GoogleService-Info.plist */,
 				3907C9D928D804EE00019482 /* Info.plist */,
 			);
 			path = ShopGo;
@@ -137,12 +148,18 @@
 				3907C9C428D804ED00019482 /* Sources */,
 				3907C9C528D804ED00019482 /* Frameworks */,
 				3907C9C628D804ED00019482 /* Resources */,
+				5962F95D28DA41C60093CA4D /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ShopGo;
+			packageProductDependencies = (
+				5962F95728DA415E0093CA4D /* FirebaseAnalytics */,
+				5962F95928DA415E0093CA4D /* FirebaseAnalyticsSwift */,
+				5962F95B28DA415E0093CA4D /* FirebaseCrashlytics */,
+			);
 			productName = ShopGo;
 			productReference = 3907C9C828D804ED00019482 /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 3907C9BF28D804ED00019482;
+			packageReferences = (
+				5962F95628DA415E0093CA4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3907C9C928D804ED00019482 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3907C9D828D804EE00019482 /* LaunchScreen.storyboard in Resources */,
+				5962F94B28D985710093CA4D /* GoogleService-Info.plist in Resources */,
 				3907C9D528D804EE00019482 /* Assets.xcassets in Resources */,
 				3907C9D328D804ED00019482 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5962F94C28D985710093CA4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +270,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5962F94D28D985710093CA4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5962F95D28DA41C60093CA4D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3907C9C428D804ED00019482 /* Sources */ = {
@@ -349,7 +394,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -437,6 +482,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShopGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +511,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShopGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -596,6 +645,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5962F95628DA415E0093CA4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5962F95728DA415E0093CA4D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5962F95628DA415E0093CA4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5962F95928DA415E0093CA4D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5962F95628DA415E0093CA4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		5962F95B28DA415E0093CA4D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5962F95628DA415E0093CA4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3907C9C028D804ED00019482 /* Project object */;
 }
