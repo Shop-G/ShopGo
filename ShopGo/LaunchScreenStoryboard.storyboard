@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3If-cB-aw9">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen Animation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LaunchScreenAnimationViewController" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCF-G0-g5O">
+                                <rect key="frame" x="5" y="421" width="380" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="39F-6F-zZZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
+                                <color key="textColor" red="0.30737508730000002" green="0.29901173980000001" blue="0.72097458110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-Fs-v2z">
+                                <rect key="frame" x="75" y="196" width="240" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="dbJ-wa-Caj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TCF-G0-g5O" firstAttribute="top" secondItem="eIc-Fs-v2z" secondAttribute="bottom" constant="15" id="6n4-qZ-2qE"/>
+                            <constraint firstItem="eIc-Fs-v2z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="7vu-pK-JhA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TCF-G0-g5O" secondAttribute="trailing" constant="5" id="UxB-Iu-LC7"/>
+                            <constraint firstItem="TCF-G0-g5O" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="ini-Vj-NaG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eIc-Fs-v2z" secondAttribute="trailing" constant="75" id="oz3-qw-8bs"/>
+                            <constraint firstItem="eIc-Fs-v2z" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="105" id="pGE-SS-pbp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Jf-jZ-bJ5"/>
+                    <connections>
+                        <outlet property="logoImage" destination="eIc-Fs-v2z" id="K62-Fk-I0N"/>
+                        <outlet property="shopGoLabel" destination="TCF-G0-g5O" id="dcz-ID-doz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986.1538461538462" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5ep-q3-TmW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3If-cB-aw9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBS-dD-3Ug">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="CHO-7F-tYP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7U-P8-K68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.9230769230769" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
