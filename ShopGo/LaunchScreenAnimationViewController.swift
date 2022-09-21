@@ -14,18 +14,23 @@ class LaunchScreenAnimationViewController: UIViewController {
     
     override func viewDidLoad() {
            super.viewDidLoad()
-           shopGoLabel.isHidden = true
-           DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
-               self.animateForMoving()
-           })
-           DispatchQueue.main.asyncAfter(deadline: .now()+1.8, execute: {
-               self.shopGoLabel.isHidden = false
-               self.animationForFading()
-           })
-           DispatchQueue.main.asyncAfter(deadline: .now()+3, execute:{
-               self.transiton()
-           })
+           animation()
        }
+     
+     func animation(){
+        shopGoLabel.isHidden = true
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
+            self.animateForMoving()
+        })
+        DispatchQueue.main.asyncAfter(deadline: .now()+1.8, execute: {
+            self.shopGoLabel.isHidden = false
+            self.animationForFading()
+        })
+        DispatchQueue.main.asyncAfter(deadline: .now()+3, execute:{
+            self.transiton()
+        })
+    }
+     
     func animateForMoving(){
         let animation = CABasicAnimation()
         animation.keyPath = "position.x"
@@ -35,6 +40,7 @@ class LaunchScreenAnimationViewController: UIViewController {
         logoImage.layer.add(animation, forKey: "launch")
         logoImage.layer.position = CGPoint(x: logoImage.layer.position.x + 300, y: logoImage.layer.position.y)
     }
+    
     func animationForFading(){
         let fadeIn = CABasicAnimation(keyPath: "opacity")
         fadeIn.fromValue = 0
@@ -42,13 +48,10 @@ class LaunchScreenAnimationViewController: UIViewController {
         fadeIn.duration = 0.5
         shopGoLabel.layer.add(fadeIn, forKey: nil)
     }
+    
     func transiton(){
         /*
          Use this function to naviagte to next screen
          */
     }
-    
-
-    
-
 }
