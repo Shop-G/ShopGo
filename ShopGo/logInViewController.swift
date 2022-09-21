@@ -16,10 +16,14 @@ class logInViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        nextButton.layer.borderWidth = 1.0
+        
         nextButton.layer.cornerRadius = 22
         nextButton.clipsToBounds = true
+        nextButton.layer.masksToBounds = false
+        nextButton.layer.shadowColor = UIColor.gray.cgColor
+        nextButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        nextButton.layer.shadowRadius = 10
+        nextButton.layer.shadowOpacity = 1.0
         
 //        let userNameImage = UIImage(named: "")
 //        addLeftImage(textField: usernameTextField, image: userNameImage!)
