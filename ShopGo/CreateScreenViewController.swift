@@ -16,8 +16,8 @@ class CreateScreenViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
     updateLayerProperties()
+        
 //        let userNameImage = UIImage(named: "")
 //        addLeftImage(textField: usernameTextField, image: userNameImage!)
         let emailImage = UIImage(named: "mail")
