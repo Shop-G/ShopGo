@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import ShopGo
 
 final class ShopGoTests: XCTestCase {
 

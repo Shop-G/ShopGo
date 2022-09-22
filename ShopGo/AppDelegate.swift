@@ -7,8 +7,6 @@
 
 import UIKit
 import FirebaseCore
-import Firebase
-
 
 
 @UIApplicationMain
