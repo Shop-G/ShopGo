@@ -11,16 +11,14 @@ class TermsAndConditionVC: UIViewController {
     
     var isReadMoreTapped = false
     
-    @IBOutlet weak var textLablel: UILabel!
+    @IBOutlet weak var textlabel: UILabel!
     @IBOutlet weak var readMoreLablel: UILabel!
     @IBOutlet weak var arrowImg: UIImageView!
     @IBOutlet weak var readMoreCenter: NSLayoutConstraint!
     @IBOutlet weak var readMoreView: UIView!
     
-
-    override func viewDidLoad() {
+  override func viewDidLoad() {
         super.viewDidLoad()
-
 
     }
     
@@ -30,14 +28,14 @@ class TermsAndConditionVC: UIViewController {
             
             readMoreView.backgroundColor = UIColor(red:  0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
             readMoreLablel.text = "Read more"
-            textLablel.numberOfLines = 8
+            textlabel.numberOfLines = 8
             arrowImg.image = UIImage(systemName: "chevron.down")
             isReadMoreTapped = false
         } else {
             readMoreLablel.text = ""
             readMoreCenter.constant = ((view.frame.width/2) - 100)
             readMoreView.backgroundColor = .clear
-            textLablel.numberOfLines = 0
+            textlabel.numberOfLines = 0
             arrowImg.image = UIImage(systemName: "chevron.up")
             isReadMoreTapped = true
         }

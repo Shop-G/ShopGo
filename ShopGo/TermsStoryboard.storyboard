@@ -158,7 +158,7 @@
                         <outlet property="readMoreCenter" destination="Awm-4x-z7C" id="Hj5-Qh-K8T"/>
                         <outlet property="readMoreLablel" destination="lBx-nk-UQJ" id="HWK-TO-Czi"/>
                         <outlet property="readMoreView" destination="eFX-8l-Tpa" id="fbY-h4-Ez1"/>
-                        <outlet property="textLablel" destination="Kh2-SM-ZcO" id="hpj-UT-aoO"/>
+                        <outlet property="textlabel" destination="Kh2-SM-ZcO" id="hpj-UT-aoO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
