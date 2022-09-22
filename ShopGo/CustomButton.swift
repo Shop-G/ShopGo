@@ -6,16 +6,19 @@
 //
 
 import UIKit
-
 class CustomButton : UIButton {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setRadiusAndShadow()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setRadiusAndShadow()
     }
+    
+    // Setting the custom button corner radius and shadows
     func setRadiusAndShadow() {
         layer.cornerRadius = 22
         layer.masksToBounds = false
