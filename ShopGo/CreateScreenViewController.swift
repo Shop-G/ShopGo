@@ -8,27 +8,28 @@
 import UIKit
 
 class CreateScreenViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneNoTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    let emailImage = UIImage(named: "mail")
+    let passwordImage = UIImage(named: "password")
+    let phoneNoImage = UIImage(named: "")
+    let userNameImage = UIImage(named: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    updateLayerProperties()
-        
-//        let userNameImage = UIImage(named: "")
-//        addLeftImage(textField: usernameTextField, image: userNameImage!)
-        let emailImage = UIImage(named: "mail")
+        updateLayerProperties()
+         
         addLeftImage(textField: emailTextField, image: emailImage!)
-//       let phoneNoImage = UIImage(named: "")
-//       addLeftImage(textField: phoneNoTextField, image: phoneNoImage!)
-        let passwordImage = UIImage(named: "password")
         addLeftImage(textField: passwordTextField, image: passwordImage!)
+        //        addLeftImage(textField: usernameTextField, image: userNameImage!)
+        //       addLeftImage(textField: phoneNoTextField, image: phoneNoImage!)
     }
     
-    func updateLayerProperties(){
+    func updateLayerProperties() {
         nextButton.layer.cornerRadius = 22
         nextButton.clipsToBounds = true
         nextButton.layer.masksToBounds = false
@@ -44,9 +45,4 @@ class CreateScreenViewController: UIViewController {
         textField.leftView = leftImageView
         textField.leftViewMode = .always
     }
-   
-    }
-    
-
-
-
+}
