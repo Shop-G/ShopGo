@@ -16,7 +16,8 @@ class LaunchScreenAnimationViewController: UIViewController {
            super.viewDidLoad()
            animation()
        }
-     
+    
+//   Using this function to activate all the animation
      func animation(){
         shopGoLabel.isHidden = true
         DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
@@ -30,17 +31,19 @@ class LaunchScreenAnimationViewController: UIViewController {
             self.transiton()
         })
     }
-     
+    
+//    This function is to move the logo from left to right
     func animateForMoving(){
         let animation = CABasicAnimation()
         animation.keyPath = "position.x"
         animation.fromValue = logoImage.layer.position.x
-        animation.toValue = logoImage.layer.position.x + 300
+        animation.toValue = logoImage.layer.position.x + 350
         animation.duration = 1.5
         logoImage.layer.add(animation, forKey: "launch")
-        logoImage.layer.position = CGPoint(x: logoImage.layer.position.x + 300, y: logoImage.layer.position.y)
+        logoImage.layer.position = CGPoint(x: logoImage.layer.position.x + 350, y: logoImage.layer.position.y)
     }
     
+//  This is for fading in the logo
     func animationForFading(){
         let fadeIn = CABasicAnimation(keyPath: "opacity")
         fadeIn.fromValue = 0
