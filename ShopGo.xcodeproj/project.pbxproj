@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3907C9C828D804ED00019482 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3907C9C828D804ED00019482 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShopGo.app; path = "/Users/humzacheema/Desktop/ShopGo/build/Debug-iphoneos/ShopGo.app"; sourceTree = "<absolute>"; };
 		3907C9CB28D804ED00019482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3907C9CD28D804ED00019482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3907C9CF28D804ED00019482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,9 +59,9 @@
 		3907C9D428D804EE00019482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3907C9D728D804EE00019482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3907C9D928D804EE00019482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3907C9DE28D804EE00019482 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3907C9DE28D804EE00019482 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoTests.xctest; path = "/Users/humzacheema/Desktop/ShopGo/build/Debug-iphoneos/ShopGoTests.xctest"; sourceTree = "<absolute>"; };
 		3907C9E228D804EF00019482 /* ShopGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoTests.swift; sourceTree = "<group>"; };
-		3907C9E828D804EF00019482 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3907C9E828D804EF00019482 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoUITests.xctest; path = "/Users/humzacheema/Desktop/ShopGo/build/Debug-iphoneos/ShopGoUITests.xctest"; sourceTree = "<absolute>"; };
 		3907C9EC28D804EF00019482 /* ShopGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITests.swift; sourceTree = "<group>"; };
 		3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5962F94A28D985710093CA4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -110,19 +110,7 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
-				3907C9C928D804ED00019482 /* Products */,
-				5962F9A528DBD8160093CA4D /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		3907C9C928D804ED00019482 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3907C9C828D804ED00019482 /* ShopGo.app */,
-				3907C9DE28D804EE00019482 /* ShopGoTests.xctest */,
-				3907C9E828D804EF00019482 /* ShopGoUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3907C9CA28D804ED00019482 /* ShopGo */ = {
@@ -155,13 +143,6 @@
 				3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */,
 			);
 			path = ShopGoUITests;
-			sourceTree = "<group>";
-		};
-		5962F9A528DBD8160093CA4D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +255,7 @@
 			packageReferences = (
 				5962F95628DA415E0093CA4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = 3907C9C928D804ED00019482 /* Products */;
+			productRefGroup = 3907C9BF28D804ED00019482;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

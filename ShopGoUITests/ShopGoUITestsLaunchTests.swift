@@ -6,7 +6,7 @@
 //
 
 import XCTest
-
+@testable import ShopGo
 final class ShopGoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
