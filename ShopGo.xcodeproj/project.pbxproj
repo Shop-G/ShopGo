@@ -83,7 +83,6 @@
 		3907C9BF28D804ED00019482 = {
 			isa = PBXGroup;
 			children = (
-				621772FD28DA44B8001CDFB4 /* TermsAndConditions */,
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
@@ -107,7 +106,9 @@
 				3907C9CB28D804ED00019482 /* AppDelegate.swift */,
 				3907C9CD28D804ED00019482 /* SceneDelegate.swift */,
 				3907C9CF28D804ED00019482 /* ViewController.swift */,
+				6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
+				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
 				3907C9D428D804EE00019482 /* Assets.xcassets */,
 				3907C9D628D804EE00019482 /* LaunchScreen.storyboard */,
 				3907C9D928D804EE00019482 /* Info.plist */,
@@ -130,15 +131,6 @@
 				3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */,
 			);
 			path = ShopGoUITests;
-			sourceTree = "<group>";
-		};
-		621772FD28DA44B8001CDFB4 /* TermsAndConditions */ = {
-			isa = PBXGroup;
-			children = (
-				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
-				6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */,
-			);
-			path = TermsAndConditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
