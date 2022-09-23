@@ -41,6 +41,7 @@ class OtpScreenViewController: UIViewController, UITextFieldDelegate {
         createAccountButtonOutlet.layer.shadowRadius = 10
         createAccountButtonOutlet.layer.shadowOpacity = 0.4
     }
+    
     //    assignig delegates for OTP text fields
     func textFieldDelegate(){
         textFieldOne.delegate = self
@@ -56,13 +57,13 @@ class OtpScreenViewController: UIViewController, UITextFieldDelegate {
             if textField == textFieldOne {
                 textFieldTwo.becomeFirstResponder()
             }
-            if textField == textFieldTwo {
+            else if textField == textFieldTwo {
                 textFieldThree.becomeFirstResponder()
             }
-            if textField == textFieldThree {
+            else if textField == textFieldThree {
                 textFieldFour.becomeFirstResponder()
             }
-            if textField == textFieldFour {
+            else if textField == textFieldFour {
                 textFieldFour.resignFirstResponder()
             }
             textField.text = string
@@ -71,14 +72,13 @@ class OtpScreenViewController: UIViewController, UITextFieldDelegate {
             if textField == textFieldTwo {
                 textFieldOne.becomeFirstResponder()
             }
-            if textField == textFieldThree {
+            else if textField == textFieldThree {
                 textFieldTwo.becomeFirstResponder()
             }
-            
-            if textField == textFieldFour {
+            else if textField == textFieldFour {
                 textFieldThree.becomeFirstResponder()
             }
-            if textField == textFieldOne {
+            else if textField == textFieldOne {
                 textFieldOne.resignFirstResponder()
             }
             textField.text = ""
