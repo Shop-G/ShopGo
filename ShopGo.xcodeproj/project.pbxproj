@@ -96,9 +96,9 @@
 		D0FA76D1EBC104A3F1F8C603 /* Pods-ShopGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopGo.debug.xcconfig"; path = "Target Support Files/Pods-ShopGo/Pods-ShopGo.debug.xcconfig"; sourceTree = "<group>"; };
 		DE5E088048E5C58EEB55250F /* Pods-ShopGo-ShopGoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopGo-ShopGoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShopGo-ShopGoUITests/Pods-ShopGo-ShopGoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		E071139C28DFB50300392291 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E071139D28DFB50300392291 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E071139E28DFB50300392291 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E071139C28DFB50300392291 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShopGo.app; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGo.app"; sourceTree = "<absolute>"; };
+		E071139D28DFB50300392291 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoTests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoTests.xctest"; sourceTree = "<absolute>"; };
+		E071139E28DFB50300392291 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoUITests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoUITests.xctest"; sourceTree = "<absolute>"; };
 		EFF3662D18AA6F3682BE96E5 /* Pods-ShopGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopGoTests.release.xcconfig"; path = "Target Support Files/Pods-ShopGoTests/Pods-ShopGoTests.release.xcconfig"; sourceTree = "<group>"; };
 		F36685DE62F0D57159D491A4 /* Pods-ShopGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopGoTests.debug.xcconfig"; path = "Target Support Files/Pods-ShopGoTests/Pods-ShopGoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,9 +151,6 @@
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
 				501D892D2AB2346005814387 /* Pods */,
 				CEA33576F899459BC1704775 /* Frameworks */,
-				E071139C28DFB50300392291 /* ShopGo.app */,
-				E071139D28DFB50300392291 /* ShopGoTests.xctest */,
-				E071139E28DFB50300392291 /* ShopGoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
