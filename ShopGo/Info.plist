@@ -16,15 +16,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-
-					<string>Loginscreen</string>
-
-
-					<string>LaunchScreenStoryboard</string>
-
 					<string>OtpScreen</string>
-
-
 				</dict>
 			</array>
 		</dict>
