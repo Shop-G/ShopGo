@@ -8,7 +8,7 @@
 import UIKit
 
 class CreateScreenViewController: UIViewController {
-    
+
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneNoTextField: UITextField!
@@ -23,10 +23,10 @@ class CreateScreenViewController: UIViewController {
         super.viewDidLoad()
         updateLayerProperties()
          
-        addLeftImage(textField: emailTextField, image: emailImage!)
-        addLeftImage(textField: passwordTextField, image: passwordImage!)
-        addLeftImage(textField: usernameTextField, image: userNameImage!)
-        addLeftImage(textField: phoneNoTextField, image: phoneNoImage!)
+        addLeftImage(textField: emailTextField, image: emailImage ?? UIImage())
+        addLeftImage(textField: passwordTextField, image: passwordImage ?? UIImage())
+        addLeftImage(textField: usernameTextField, image: userNameImage ?? UIImage())
+        addLeftImage(textField: phoneNoTextField, image: phoneNoImage ?? UIImage())
     }
     
     func updateLayerProperties() {
