@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--LoginVC-->
         <scene sceneID="AUi-Ec-UfW">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="LUc-f6-8UH" customClass="LoginViewController" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="LUc-f6-8UH" customClass="LoginVC" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBM-Np-RVo">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
