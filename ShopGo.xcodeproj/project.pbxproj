@@ -17,9 +17,15 @@
 		3907C9ED28D804EF00019482 /* ShopGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9EC28D804EF00019482 /* ShopGoUITests.swift */; };
 		3907C9EF28D804EF00019482 /* ShopGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */; };
 
+
 		402C117328DB0BBB00FC11C2 /* CreateAccountScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */; };
 		40FE82FC28DB8DA0009E0072 /* CreateAccountScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FE82FB28DB8DA0009E0072 /* CreateAccountScreen.storyboard */; };
 		40FE82FE28DB8DFE009E0072 /* CreateScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE82FD28DB8DFE009E0072 /* CreateScreenViewController.swift */; };
+
+		621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */; };
+		6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */; };
+
+
 
 		8CC0A54A28DA6EB3001682AE /* Loginscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* Loginscreen.storyboard */; };
 		8CC0A54E28DAA761001682AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54D28DAA761001682AE /* LoginViewController.swift */; };
@@ -67,9 +73,14 @@
 		3907C9EC28D804EF00019482 /* ShopGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITests.swift; sourceTree = "<group>"; };
 		3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 
+
 		402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CreateAccountScreen.xcassets; sourceTree = "<group>"; };
 		40FE82FB28DB8DA0009E0072 /* CreateAccountScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountScreen.storyboard; sourceTree = "<group>"; };
 		40FE82FD28DB8DFE009E0072 /* CreateScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScreenViewController.swift; sourceTree = "<group>"; };
+
+		621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsStoryboard.storyboard; sourceTree = "<group>"; };
+		6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionVC.swift; sourceTree = "<group>"; };
+
 
 
 		8CC0A54928DA6EB3001682AE /* Loginscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loginscreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +93,7 @@
 
 		C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OtpScreen.storyboard; sourceTree = "<group>"; };
 		C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
+
 
 
 /* End PBXFileReference section */
@@ -138,9 +150,15 @@
 				3907C9CD28D804ED00019482 /* SceneDelegate.swift */,
 				3907C9CF28D804ED00019482 /* ViewController.swift */,
 
+
 				40FE82FB28DB8DA0009E0072 /* CreateAccountScreen.storyboard */,
 				40FE82FD28DB8DFE009E0072 /* CreateScreenViewController.swift */,
 				402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */,
+
+				6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */,
+				3907C9D128D804ED00019482 /* Main.storyboard */,
+				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
+
 
 				8CC0A54928DA6EB3001682AE /* Loginscreen.storyboard */,
 				8CC0A54D28DAA761001682AE /* LoginViewController.swift */,
@@ -153,6 +171,7 @@
 
 				C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */,
 				C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */,
+
 
 				3907C9D428D804EE00019482 /* Assets.xcassets */,
 				3907C9D628D804EE00019482 /* LaunchScreen.storyboard */,
@@ -284,7 +303,11 @@
 			files = (
 				C3AF913728DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard in Resources */,
 				3907C9D828D804EE00019482 /* LaunchScreen.storyboard in Resources */,
+
 				402C117328DB0BBB00FC11C2 /* CreateAccountScreen.xcassets in Resources */,
+
+				621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */,
+
 				3907C9D528D804EE00019482 /* Assets.xcassets in Resources */,
 
 				40FE82FC28DB8DA0009E0072 /* CreateAccountScreen.storyboard in Resources */,
@@ -327,6 +350,9 @@
 
 				3907C9D028D804ED00019482 /* ViewController.swift in Sources */,
 				3907C9CC28D804ED00019482 /* AppDelegate.swift in Sources */,
+
+				6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */,
+
 
 				C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */,
 
