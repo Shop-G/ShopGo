@@ -6,7 +6,7 @@
 //
 
 import XCTest
-
+@testable import ShopGo
 final class ShopGoUITests: XCTestCase {
 
     override func setUpWithError() throws {

@@ -29,7 +29,7 @@ class LoginVC: UIViewController {
     }
 }
 
-extension LoginViewController {
+extension LoginVC {
     
     // Adding a left icon to the textfield with padding
     func addLeftImageToTextfield(textfield:UITextField , addImage img:UIImage) {
