@@ -1,12 +1,11 @@
-//
-//  LoginViewController.swift
+//  LoginVC.swift
 //  ShopGo
 //
 //  Created by Quratulain on 9/21/22.
 //
 
 import UIKit
-class LoginViewController: UIViewController {
+class LoginVC: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var usernameTextfield: UITextField!
@@ -21,7 +20,7 @@ class LoginViewController: UIViewController {
         configureTextfieldIcons()
     }
 
-    // Configuring textfield icons
+    // Configuring textfield icons    as
     func configureTextfieldIcons() {
         guard let usernameImage = UIImage(named: "user") else {return}
         addLeftImageToTextfield(textfield: usernameTextfield, addImage: usernameImage)
