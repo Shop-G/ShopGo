@@ -1,0 +1,17 @@
+# rule identifiers turned on by default to exclude from running
+opt_in_rules:
+- force_unwrapping
+-  implicitly_unwrapped_optional
+
+function_body_length:
+  warning: 50 # default 40
+  error: 50
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - ShopGo/AppDelegate.swift
+  - ShopGo/SceneDelegate.swift
+#implicitly_unwrapped_optional:
+#  severity: warning
+force_unwrapping:
+  severity: error
