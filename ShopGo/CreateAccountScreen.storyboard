@@ -45,6 +45,10 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="nameChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="EeX-uW-IBF"/>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="nmG-yQ-IAp"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLI-yZ-PRa">
                                                 <rect key="frame" x="60" y="295.33333333333331" width="270" height="20.333333333333314"/>
@@ -56,6 +60,10 @@
                                                 <rect key="frame" x="60" y="330.66666666666669" width="270" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="EUn-5U-Ul6"/>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="X9R-yY-kyU"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone no" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-z3-1Tx">
                                                 <rect key="frame" x="60" y="390.66666666666669" width="270" height="20.333333333333314"/>
@@ -67,6 +75,10 @@
                                                 <rect key="frame" x="60" y="426" width="270" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="phoneNoChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="sU7-tG-oHh"/>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="jt6-XQ-Uvg"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-iq-Fzd">
                                                 <rect key="frame" x="60" y="489" width="270" height="20.333333333333314"/>
@@ -78,6 +90,10 @@
                                                 <rect key="frame" x="60" y="524.33333333333337" width="270" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="passwordChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="k40-6L-XhM"/>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Uno-4R-miz"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-tj-lTt">
                                                 <rect key="frame" x="60" y="599.33333333333337" width="270" height="45"/>
@@ -86,6 +102,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Next">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vAw-Oc-Eac"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d8D-mM-c2i">
                                                 <rect key="frame" x="70" y="810.33333333333337" width="250" height="56"/>
@@ -159,7 +178,7 @@
                                     <constraint firstItem="sLC-9m-YtN" firstAttribute="trailing" secondItem="FIb-7h-Cfr" secondAttribute="trailing" id="EEo-7l-L26"/>
                                     <constraint firstItem="sLC-9m-YtN" firstAttribute="bottom" secondItem="FIb-7h-Cfr" secondAttribute="bottom" id="RWs-wc-05Q"/>
                                     <constraint firstItem="sLC-9m-YtN" firstAttribute="leading" secondItem="FIb-7h-Cfr" secondAttribute="leading" id="RpA-PE-5us"/>
-                                    <constraint firstItem="sLC-9m-YtN" firstAttribute="height" secondItem="FIb-7h-Cfr" secondAttribute="height" multiplier="1.05" priority="250" placeholder="YES" id="UeJ-AM-YgP"/>
+                                    <constraint firstItem="sLC-9m-YtN" firstAttribute="height" secondItem="FIb-7h-Cfr" secondAttribute="height" multiplier="1.05" priority="250" id="UeJ-AM-YgP"/>
                                     <constraint firstItem="sLC-9m-YtN" firstAttribute="top" secondItem="FIb-7h-Cfr" secondAttribute="top" id="Zr5-fn-KTb"/>
                                 </constraints>
                             </scrollView>
@@ -175,15 +194,15 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="nl3-JZ-aDG" id="SHD-4o-Iah"/>
-                        <outlet property="nextButton" destination="q1n-tj-lTt" id="cBc-eh-mNV"/>
-                        <outlet property="passwordTextField" destination="cvw-iF-mfM" id="Cph-k6-7wm"/>
+                        <outlet property="nextButton" destination="q1n-tj-lTt" id="Ntg-xR-Oui"/>
+                        <outlet property="passwordTextField" destination="cvw-iF-mfM" id="oSq-r4-Eo1"/>
                         <outlet property="phoneNoTextField" destination="MYw-NU-fwe" id="RDr-r2-Oar"/>
                         <outlet property="usernameTextField" destination="j12-dd-tqQ" id="6VN-YI-ENp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-318.46153846153845" y="73.93364928909952"/>
+            <point key="canvasLocation" x="-74" y="77"/>
         </scene>
     </scenes>
     <resources>
