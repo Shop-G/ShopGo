@@ -19,12 +19,17 @@ class OtpScreenViewController: UIViewController, UITextFieldDelegate {
         /*
          Code for Create Account screen
          */
+        let createAccVC: CreateScreenViewController = UIStoryboard(name: "CreateAccountScreen", bundle: nil).instantiateViewController(withIdentifier: "CreateScreenViewController") as! CreateScreenViewController
+        navigationController?.pushViewController(createAccVC, animated: true)
+        
     }
     
     @IBAction func logInAccountButton(_ sender: Any) {
         /*
          Code for login screen
          */
+        let loginVC: LoginVC = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginVC
+        navigationController?.pushViewController(loginVC, animated: true)
     }
     
     override func viewDidLoad() {
@@ -48,7 +53,7 @@ class OtpScreenViewController: UIViewController, UITextFieldDelegate {
         textFieldTwo.delegate = self
         textFieldThree.delegate = self
         textFieldFour.delegate = self
-        textFieldOne.becomeFirstResponder()
+     //   textFieldOne.becomeFirstResponder()
     }
     
     //  functionality for the textfield

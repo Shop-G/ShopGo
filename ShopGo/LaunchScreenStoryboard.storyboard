@@ -47,11 +47,20 @@
                     <connections>
                         <outlet property="logoImage" destination="eIc-Fs-v2z" id="K62-Fk-I0N"/>
                         <outlet property="shopGoLabel" destination="TCF-G0-g5O" id="dcz-ID-doz"/>
+                        <segue destination="Ljs-7K-ae8" kind="presentation" identifier="otpVC" modalPresentationStyle="fullScreen" id="yvJ-1e-xSN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1986.1538461538462" y="3.5545023696682461"/>
+        </scene>
+        <!--OtpScreen-->
+        <scene sceneID="FJf-QK-VBY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OtpScreen" id="Ljs-7K-ae8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGB-QD-ld6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="-51"/>
         </scene>
     </scenes>
     <resources>

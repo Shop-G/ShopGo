@@ -56,5 +56,6 @@ class LaunchScreenAnimationViewController: UIViewController {
         /*
          Use this function to naviagte to next screen
          */
+        self.performSegue(withIdentifier: "otpVC", sender: nil)
     }
 }
