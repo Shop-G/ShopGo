@@ -5,7 +5,10 @@
 //
 
 import UIKit
-class LoginVC: UIViewController , UITextFieldDelegate{
+class LoginVC: UIViewController , UITextFieldDelegate {
+    
+    var username = "admin"
+    var password = "password1@"
     
     @IBOutlet weak var redUnderlineView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -25,19 +28,16 @@ class LoginVC: UIViewController , UITextFieldDelegate{
     }
     
     @IBAction func loginAction(_ sender: Any) {
-        let password = passwordTextfield.text
-        let username = usernameTextfield.text
-        if (isValidPassword(password: password!)) {
-            print("valid password")
-        }else{
+        let passwordField = passwordTextfield.text
+        let usernameField = usernameTextfield.text
+        if (isValidPassword(password: passwordField!)) && passwordField == password{
+        } else {
             passwordTextfield.isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 4, revert: true)
             redUnderlineView.isHidden = false
-            print("invalid password")
         }
-        if (isValidUsername(username: username!)) {
-            print("valid username")
-        }else{
-            print("invalid username")
+        if (isValidUsername(username: usernameField!)) && usernameField == username {
+        } else {
+            usernameTextfield.isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 4, revert: true)
         }
         resetForm()
     }
@@ -67,7 +67,7 @@ class LoginVC: UIViewController , UITextFieldDelegate{
     }
 }
 
-extension LoginVC{
+extension LoginVC {
     
     // Adding a left icon to the textfield with padding
     func addLeftImageToTextfield(textfield:UITextField , addImage img:UIImage) {
@@ -90,10 +90,10 @@ extension LoginVC{
     //Button enable and Disable
     func buttonEnableDisable() {
         if let name = usernameTextfield.text, let password = passwordTextfield.text {
-            if !name.isEmpty && !password.isEmpty {
+            if (isValidPassword(password: password)) && (isValidUsername(username: name)) {
                 loginButton.isEnabled = true
                 loginButton.alpha = 1
-            }else{
+            } else {
                 loginButton.isEnabled = false
                 loginButton.alpha = 0.9
             }
@@ -125,19 +125,5 @@ extension LoginVC{
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
-    }
-}
-
-extension UITextField {
-    
-    // textfield shake
-    func isError(baseColor: CGColor, numberOfShakes shakes: Float, revert: Bool) {
-        let shake: CABasicAnimation = CABasicAnimation(keyPath: "position")
-        shake.duration = 0.07
-        shake.repeatCount = shakes
-        if revert { shake.autoreverses = true  } else { shake.autoreverses = false }
-        shake.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 10, y: center.y))
-        shake.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 10, y: center.y))
-        layer.add(shake, forKey: "position")
     }
 }

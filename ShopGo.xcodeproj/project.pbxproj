@@ -36,6 +36,7 @@
 		5962F9B728DBE5220093CA4D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5962F9B628DBE5220093CA4D /* FirebaseAuth */; };
 		621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */; };
 		6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */; };
+		8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93154E28E629780020CEBA /* Textfield+extension.swift */; };
 		8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */; };
 		8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54F28DAC7D8001682AE /* CustomButton.swift */; };
 		C33B9D2228DCC66500DCA1DB /* OtpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */; };
@@ -79,6 +80,7 @@
 		5962F94A28D985710093CA4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsStoryboard.storyboard; sourceTree = "<group>"; };
 		6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionVC.swift; sourceTree = "<group>"; };
+		8C93154E28E629780020CEBA /* Textfield+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield+extension.swift"; sourceTree = "<group>"; };
 		8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		8CC0A54F28DAC7D8001682AE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8CCAB50F28E31FFD0045C93C /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
 				E071139628DFA47500392291 /* LoginVC.swift */,
+				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
@@ -375,6 +378,7 @@
 				6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */,
 				C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */,
 				C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */,
+				8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */,
 				3907C9CE28D804ED00019482 /* SceneDelegate.swift in Sources */,
 				8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */,
 			);
