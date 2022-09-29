@@ -3,7 +3,6 @@
 //  ShopGo
 //
 //  Created by Anoosha Wahid  on 21/09/2022.
-//
 
 import UIKit
 
@@ -18,13 +17,10 @@ class CreateScreenViewController: UIViewController , UITextFieldDelegate {
     let passwordImage = UIImage(named: "password")
     let phoneNoImage = UIImage(named: "phone")
     let userNameImage = UIImage(named: "person")
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        nextButton.isEnabled = false
-        nextButton.alpha = 0.5
-        
+        resetScreen()
         updateLayerProperties()
         self.hideKeyboardTappedAccount()
         
@@ -38,14 +34,24 @@ class CreateScreenViewController: UIViewController , UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    func resetScreen() {
+        nextButton.isEnabled = false
+        nextButton.alpha = 0.5
+        
+        usernameTextField.text = ""
+        emailTextField.text = ""
+        phoneNoTextField.text = ""
+        passwordTextField.text = ""
+    }
+    
     // Move view 150 points upward
     @objc func keyboardWillShow(sender: NSNotification) {
-         self.view.frame.origin.y = -150
+        self.view.frame.origin.y = -150
     }
     
     // Move view to original position
     @objc func keyboardWillHide(sender: NSNotification) {
-         self.view.frame.origin.y = 0
+        self.view.frame.origin.y = 0
     }
     
     // dismiss the keyboard on return tap
@@ -53,7 +59,7 @@ class CreateScreenViewController: UIViewController , UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-        
+    
     // Setting the custom button corner radius and shadows
     func updateLayerProperties() {
         nextButton.layer.cornerRadius = 22
@@ -72,63 +78,60 @@ class CreateScreenViewController: UIViewController , UITextFieldDelegate {
         textField.leftView = leftImageView
         textField.leftViewMode = .always
     }
-   
     
     // name validation
     @IBAction func nameChanged(_ sender: Any) {
-     checkForValidForm()
+        if (usernameTextField.text?.isValidUsername)! {
+            checkForValidForm()
+        }
     }
+    
     // email validation
     @IBAction func emailChanged(_ sender: Any) {
         if (emailTextField.text?.isValidEmail)! {
             checkForValidForm()
-            print("your email is valid")
-        } else {
-          print("your email is invalid")
         }
     }
+        
     // phone number validation
     @IBAction func phoneNoChanged(_ sender: Any) {
-        if (phoneNoTextField?.text?.isValidPhoneNo)! {
+        if (phoneNoTextField.text?.isValidPhoneNo)! {
             checkForValidForm()
-            print("your phone number is valid")
-        } else {
-            print("your phone number is invalid")
         }
     }
+        
     // password validation
     @IBAction func passwordChanged(_ sender: Any) {
-        if (passwordTextField?.text?.isPasswordValid)!   {
+        if (passwordTextField.text?.isValidPassword)! {
             checkForValidForm()
-            print("your password is valid")
-        }  else {
-            print("your password is invalid")
         }
     }
     
-    @IBAction func nextButtonTapped(_ sender: Any) {
-
-    }
-   // enable and disable button when textfields are empty or not
-    func checkForValidForm()
-        {
-            if let name = usernameTextField.text ,
+    
+   @IBAction func nextButtonTapped(_ sender: Any) {
+            resetScreen()
+        }
+        
+        // enable and disable button when textfields are empty or not
+    func checkForValidForm() {
+         if let name = usernameTextField.text ,
                let email = emailTextField.text ,
                let phoneNo = phoneNoTextField.text ,
                let password = passwordTextField.text
             {
                 if !name.isEmpty && !email.isEmpty && !phoneNo.isEmpty && !password.isEmpty {
-                nextButton.isEnabled = true
+                    nextButton.isEnabled = true
                     nextButton.alpha = 1.0
-            }
-            else
-            {
-                nextButton.isEnabled = false
-                nextButton.alpha = 0.5
+                } else {
+                    nextButton.isEnabled = false
+                    nextButton.alpha = 0.5
+                }
             }
         }
-}
-}
+    }
+
+
+
 
 
 
