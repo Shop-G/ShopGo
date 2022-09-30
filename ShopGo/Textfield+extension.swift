@@ -18,7 +18,6 @@ extension LoginVC : UITextFieldDelegate {
         shake.fromValue = NSValue(cgPoint: CGPoint(x: textfield.center.x - 10, y: textfield.center.y))
         shake.toValue = NSValue(cgPoint: CGPoint(x: textfield.center.x + 10, y: textfield.center.y))
         textfield.layer.add(shake, forKey: "position")
-//        layer.add(shake, forKey: "position")
     }
     
     // Configuring textfield icons  and padding
