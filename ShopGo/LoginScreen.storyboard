@@ -63,6 +63,10 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="usernameEdited:" destination="LUc-f6-8UH" eventType="editingChanged" id="lWa-Qf-smt"/>
+                                                    <outlet property="delegate" destination="LUc-f6-8UH" id="PfH-pb-2HD"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Username" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86E-YX-ZyM">
                                                 <rect key="frame" x="49.999999999999986" y="265.66666666666669" width="156.66666666666663" height="24"/>
@@ -87,6 +91,10 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="passwordEdited:" destination="LUc-f6-8UH" eventType="editingChanged" id="fzr-O1-8Ig"/>
+                                                    <outlet property="delegate" destination="LUc-f6-8UH" id="lMF-YL-8KC"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsg-JM-93v" customClass="CustomButton" customModule="ShopGo" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="517.66666666666663" width="270" height="45"/>
@@ -100,6 +108,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginAction:" destination="LUc-f6-8UH" eventType="touchUpInside" id="peh-tP-o3s"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⸻ Log in with ⸻" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKT-fl-gr5">
                                                 <rect key="frame" x="80" y="632.66666666666663" width="270" height="31.333333333333371"/>
@@ -107,6 +118,13 @@
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ykn-fB-0V8">
+                                                <rect key="frame" x="51.666666666666657" y="433.66666666666669" width="327" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="ecl-uc-8Er"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -125,12 +143,15 @@
                                             <constraint firstItem="BjG-OF-uog" firstAttribute="top" secondItem="fzZ-yD-Mvk" secondAttribute="bottom" constant="50" id="LQe-in-Cfo"/>
                                             <constraint firstItem="4NG-4M-SMm" firstAttribute="trailing" secondItem="b0H-wB-PIG" secondAttribute="trailing" id="Lbc-95-VBc"/>
                                             <constraint firstItem="4NG-4M-SMm" firstAttribute="top" secondItem="gRr-9w-GsG" secondAttribute="bottom" constant="10" id="MGK-ru-MmD"/>
+                                            <constraint firstItem="Ykn-fB-0V8" firstAttribute="top" secondItem="gRr-9w-GsG" secondAttribute="bottom" id="Mh4-db-Pcz"/>
                                             <constraint firstAttribute="height" constant="851" id="O2G-kq-y1v"/>
                                             <constraint firstAttribute="trailing" secondItem="PcN-mB-hfD" secondAttribute="trailing" constant="50" id="Rtm-5o-g4n"/>
                                             <constraint firstItem="lKT-fl-gr5" firstAttribute="trailing" secondItem="vsg-JM-93v" secondAttribute="trailing" id="TjL-A1-l5P"/>
                                             <constraint firstAttribute="trailing" secondItem="Wkg-Rt-CDK" secondAttribute="trailing" constant="50" id="WeV-fr-DXf"/>
                                             <constraint firstItem="Wkg-Rt-CDK" firstAttribute="top" secondItem="86E-YX-ZyM" secondAttribute="bottom" constant="10" id="XKV-jg-gab"/>
                                             <constraint firstItem="4NG-4M-SMm" firstAttribute="leading" secondItem="b0H-wB-PIG" secondAttribute="leading" id="YXc-t5-P0i"/>
+                                            <constraint firstItem="Ykn-fB-0V8" firstAttribute="top" secondItem="gRr-9w-GsG" secondAttribute="bottom" id="aBr-pT-YbY"/>
+                                            <constraint firstItem="Ykn-fB-0V8" firstAttribute="width" secondItem="gRr-9w-GsG" secondAttribute="width" multiplier="0.990909" id="bj4-Nw-fma"/>
                                             <constraint firstItem="86E-YX-ZyM" firstAttribute="leading" secondItem="mNv-F5-4Ny" secondAttribute="leading" constant="50" id="bmU-it-X5N"/>
                                             <constraint firstItem="Wkg-Rt-CDK" firstAttribute="leading" secondItem="86E-YX-ZyM" secondAttribute="leading" id="btN-l6-fRE"/>
                                             <constraint firstItem="b0H-wB-PIG" firstAttribute="leading" secondItem="86E-YX-ZyM" secondAttribute="leading" id="eH0-2y-tK3"/>
@@ -140,6 +161,7 @@
                                             <constraint firstItem="86E-YX-ZyM" firstAttribute="top" secondItem="BjG-OF-uog" secondAttribute="bottom" constant="50" id="rC0-FV-BNE"/>
                                             <constraint firstItem="PcN-mB-hfD" firstAttribute="leading" secondItem="mNv-F5-4Ny" secondAttribute="leading" constant="50" id="uAB-n6-ygw"/>
                                             <constraint firstItem="BjG-OF-uog" firstAttribute="centerX" secondItem="mNv-F5-4Ny" secondAttribute="centerX" id="vfd-e8-KuI"/>
+                                            <constraint firstItem="Ykn-fB-0V8" firstAttribute="centerX" secondItem="mNv-F5-4Ny" secondAttribute="centerX" id="y4q-TW-J9G"/>
                                             <constraint firstItem="vsg-JM-93v" firstAttribute="centerX" secondItem="mNv-F5-4Ny" secondAttribute="centerX" id="yt1-Gp-RN4"/>
                                         </constraints>
                                     </view>
@@ -168,8 +190,9 @@
                         <outlet property="facebookButton" destination="mrx-f3-K1q" id="7H1-5Z-8dZ"/>
                         <outlet property="linkedinButton" destination="LPj-Tn-J9s" id="EOe-Hj-mLH"/>
                         <outlet property="loginButton" destination="vsg-JM-93v" id="C8f-Sb-fwe"/>
-                        <outlet property="passwordTextfield" destination="gRr-9w-GsG" id="vqD-4s-gpN"/>
-                        <outlet property="scrollView" destination="fD3-jP-wPn" id="29G-ad-6oS"/>
+                        <outlet property="passwordTextfield" destination="gRr-9w-GsG" id="9sL-WM-HEi"/>
+                        <outlet property="redUnderlineView" destination="Ykn-fB-0V8" id="yRz-rR-QJ2"/>
+                        <outlet property="scrollView" destination="fD3-jP-wPn" id="EcI-hV-KgO"/>
                         <outlet property="twitterButton" destination="kQN-mt-qvB" id="qMG-Rm-ga5"/>
                         <outlet property="usernameTextfield" destination="Wkg-Rt-CDK" id="YOs-MZ-L3m"/>
                     </connections>
@@ -189,6 +212,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
