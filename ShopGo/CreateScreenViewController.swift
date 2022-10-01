@@ -80,16 +80,3 @@ class CreateScreenViewController: UIViewController  {
         checkForValidForm()
     }
 }
-
-
-
-
-
-
-
-
-
-
-    
-    
-
