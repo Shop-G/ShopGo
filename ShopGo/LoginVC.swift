@@ -7,6 +7,10 @@
 import UIKit
 class LoginVC: UIViewController {
     
+    var username = "admin"
+    var password = "password1@"
+    
+    @IBOutlet weak var redUnderlineView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
@@ -18,28 +22,36 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTextfieldIcons()
+        resetForm()
+        redUnderlineView.isHidden = true
+        hideKeyboardWhenTappedAround()
     }
-
-    // Configuring textfield icons    as
-    func configureTextfieldIcons() {
-        guard let usernameImage = UIImage(named: "user") else {return}
-        addLeftImageToTextfield(textfield: usernameTextfield, addImage: usernameImage)
-        guard let passwordImage = UIImage(named: "padlock") else {return}
-        addLeftImageToTextfield(textfield: passwordTextfield, addImage: passwordImage)
-    }
-}
-
-extension LoginVC {
     
-    // Adding a left icon to the textfield with padding
-    func addLeftImageToTextfield(textfield:UITextField , addImage img:UIImage) {
-        let leftImage = UIImageView()
-        leftImage.image = img
-        let contentView = UIView()
-        contentView.addSubview(leftImage)
-        contentView.frame = CGRectMake(0, 0, 25, 20)
-        leftImage.frame = CGRectMake(10, 0, 25, 20)
-        textfield.leftView = contentView
-        textfield.leftViewMode = .always
+    @IBAction func loginAction(_ sender: Any) {
+        let passwordField = passwordTextfield.text
+        let usernameField = usernameTextfield.text
+        
+        if (isValidPassword(password: passwordField!)) && passwordField == password && isValidUsername(username: usernameField!) && usernameField == username{
+            
+        } else {
+            isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 4.0, revert: true, textfield: passwordTextfield)
+            redUnderlineView.isHidden = false
+        }
+        resetForm()
+    }
+    
+    @IBAction func usernameEdited(_ sender: Any) {
+        buttonEnableDisable()
+    }
+    
+    @IBAction func passwordEdited(_ sender: Any) {
+        buttonEnableDisable()
+        redUnderlineView.isHidden = true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        print("return")
+        return true
     }
 }
