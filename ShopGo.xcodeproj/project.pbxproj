@@ -36,6 +36,7 @@
 		5962F9B728DBE5220093CA4D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5962F9B628DBE5220093CA4D /* FirebaseAuth */; };
 		621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */; };
 		6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */; };
+		8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93154E28E629780020CEBA /* Textfield+extension.swift */; };
 		8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */; };
 		8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54F28DAC7D8001682AE /* CustomButton.swift */; };
 		94B6248A28E3D3170029CBA6 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B6248928E3D3170029CBA6 /* Welcome.storyboard */; };
@@ -83,8 +84,10 @@
 		5962F94A28D985710093CA4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsStoryboard.storyboard; sourceTree = "<group>"; };
 		6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionVC.swift; sourceTree = "<group>"; };
+		8C93154E28E629780020CEBA /* Textfield+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield+extension.swift"; sourceTree = "<group>"; };
 		8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		8CC0A54F28DAC7D8001682AE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+
 		94B6248628E3D22C0029CBA6 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B6248728E3D22C0029CBA6 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B6248828E3D22C0029CBA6 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +95,7 @@
 		94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSecondViewController.swift; sourceTree = "<group>"; };
 		94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+
 		C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OtpScreen.storyboard; sourceTree = "<group>"; };
 		C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
 		C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenStoryboard.storyboard; sourceTree = "<group>"; };
@@ -142,9 +146,11 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
-				94B6248628E3D22C0029CBA6 /* ShopGo.app */,
-				94B6248728E3D22C0029CBA6 /* ShopGoTests.xctest */,
-				94B6248828E3D22C0029CBA6 /* ShopGoUITests.xctest */,
+
+				8CCAB50F28E31FFD0045C93C /* ShopGo.app */,
+				8CCAB51028E31FFD0045C93C /* ShopGoTests.xctest */,
+				8CCAB51128E31FFD0045C93C /* ShopGoUITests.xctest */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +171,7 @@
 				94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */,
 				94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */,
 				E071139628DFA47500392291 /* LoginVC.swift */,
+				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
@@ -220,7 +227,8 @@
 				5962F9A628DBD8160093CA4D /* FirebaseAuth */,
 			);
 			productName = ShopGo;
-			productReference = 94B6248628E3D22C0029CBA6 /* ShopGo.app */;
+
+			productReference = 8CCAB50F28E31FFD0045C93C /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3907C9DD28D804EE00019482 /* ShopGoTests */ = {
@@ -244,7 +252,8 @@
 				5962F9AE28DBE1CB0093CA4D /* FirebaseAnalyticsSwift */,
 			);
 			productName = ShopGoTests;
-			productReference = 94B6248728E3D22C0029CBA6 /* ShopGoTests.xctest */;
+
+			productReference = 8CCAB51028E31FFD0045C93C /* ShopGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3907C9E728D804EF00019482 /* ShopGoUITests */ = {
@@ -268,7 +277,9 @@
 				5962F9B628DBE5220093CA4D /* FirebaseAuth */,
 			);
 			productName = ShopGoUITests;
-			productReference = 94B6248828E3D22C0029CBA6 /* ShopGoUITests.xctest */;
+
+			productReference = 8CCAB51128E31FFD0045C93C /* ShopGoUITests.xctest */;
+
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -390,6 +401,7 @@
 				94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */,
 				C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */,
 				C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */,
+				8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */,
 				3907C9CE28D804ED00019482 /* SceneDelegate.swift in Sources */,
 				94B6249028E3D5DA0029CBA6 /* WelcomePageViewController.swift in Sources */,
 				8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */,
