@@ -146,11 +146,9 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
-
-				8CCAB50F28E31FFD0045C93C /* ShopGo.app */,
-				8CCAB51028E31FFD0045C93C /* ShopGoTests.xctest */,
-				8CCAB51128E31FFD0045C93C /* ShopGoUITests.xctest */,
-
+				94B6248628E3D22C0029CBA6 /* ShopGo.app */,
+				94B6248728E3D22C0029CBA6 /* ShopGoTests.xctest */,
+				94B6248828E3D22C0029CBA6 /* ShopGoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,8 +225,7 @@
 				5962F9A628DBD8160093CA4D /* FirebaseAuth */,
 			);
 			productName = ShopGo;
-
-			productReference = 8CCAB50F28E31FFD0045C93C /* ShopGo.app */;
+			productReference = 94B6248628E3D22C0029CBA6 /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3907C9DD28D804EE00019482 /* ShopGoTests */ = {
@@ -252,8 +249,7 @@
 				5962F9AE28DBE1CB0093CA4D /* FirebaseAnalyticsSwift */,
 			);
 			productName = ShopGoTests;
-
-			productReference = 8CCAB51028E31FFD0045C93C /* ShopGoTests.xctest */;
+			productReference = 94B6248728E3D22C0029CBA6 /* ShopGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3907C9E728D804EF00019482 /* ShopGoUITests */ = {
@@ -277,9 +273,7 @@
 				5962F9B628DBE5220093CA4D /* FirebaseAuth */,
 			);
 			productName = ShopGoUITests;
-
-			productReference = 8CCAB51128E31FFD0045C93C /* ShopGoUITests.xctest */;
-
+			productReference = 94B6248828E3D22C0029CBA6 /* ShopGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
