@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OtpScreenViewController: UIViewController, UITextFieldDelegate {
+class OtpScreenViewController: UIViewController , UITextFieldDelegate {
     
     @IBOutlet weak var textFieldOne: UITextField!
     @IBOutlet weak var textFieldTwo: UITextField!
