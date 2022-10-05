@@ -14,7 +14,7 @@ extension  CreateScreenViewController : UITextFieldDelegate {
         nextButton.clipsToBounds = true
         nextButton.layer.masksToBounds = false
         nextButton.layer.shadowColor = UIColor.gray.cgColor
-        nextButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        nextButton.layer.shadowOffset = CGSize(width: 0, height: 2)
         nextButton.layer.shadowRadius = 10
         nextButton.layer.shadowOpacity = 1.0
     }
@@ -51,7 +51,7 @@ extension  CreateScreenViewController : UITextFieldDelegate {
     
     //Username validation
     func isValidUsername(username: String) -> Bool {
-        let usernameRegEx = "\\w{5,18}"
+        let usernameRegEx = "\\w{4,18}"
         let usernameTest = NSPredicate(format: "SELF MATCHES %@", usernameRegEx)
         return usernameTest.evaluate(with: username)
     }
@@ -89,7 +89,7 @@ extension  CreateScreenViewController : UITextFieldDelegate {
                 nextButton.alpha = 1.0
             } else {
                 nextButton.isEnabled = false
-                nextButton.alpha = 0.5
+                nextButton.alpha = 0.9
             }
         }
     }
@@ -97,7 +97,7 @@ extension  CreateScreenViewController : UITextFieldDelegate {
     // Reset the storyboard
     func resetScreen() {
         nextButton.isEnabled = false
-        nextButton.alpha = 0.5
+//        nextButton.alpha = 0.9
         
         usernameTextField.text = ""
         emailTextField.text = ""

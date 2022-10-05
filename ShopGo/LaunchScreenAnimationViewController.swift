@@ -27,7 +27,7 @@ class LaunchScreenAnimationViewController: UIViewController {
             self.shopGoLabel.isHidden = false
             self.animationForFading()
         })
-        DispatchQueue.main.asyncAfter(deadline: .now()+3, execute:{
+         DispatchQueue.main.asyncAfter(deadline: .now()+3.5, execute:{
             self.transiton()
         })
     }
@@ -53,8 +53,9 @@ class LaunchScreenAnimationViewController: UIViewController {
     }
     
     func transiton(){
-        /*
-         Use this function to naviagte to next screen
-         */
+        let vc = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "secondVC") as! WelcomeSecondViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.navigationItem.hidesBackButton = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

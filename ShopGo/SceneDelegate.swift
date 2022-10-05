@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let vc = storyboard.instantiateViewController(identifier: "WelcomePageViewController") as! WelcomePageViewController
             self.window?.rootViewController = UINavigationController(rootViewController: vc)
         } else {
-            let storyboard = UIStoryboard(name: "Welcome", bundle: .main)
-            let mc = storyboard.instantiateViewController(withIdentifier: "secondVC") as! WelcomeSecondViewController
+            let storyboard = UIStoryboard(name: "LaunchScreenStoryboard", bundle: .main)
+            let mc = storyboard.instantiateViewController(withIdentifier: "LaunchScreenAnimationViewController") as! LaunchScreenAnimationViewController
             self.window?.rootViewController = UINavigationController(rootViewController: mc)
             self.window?.makeKeyAndVisible()
         }
