@@ -15,9 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         if UserDefaults.standard.bool(forKey: "introLaunched") == false{
             UserDefaults.standard.set(true, forKey: "introLaunched")
-            let storyboard = UIStoryboard(name: "Welcome", bundle: .main)
-            let vc = storyboard.instantiateViewController(identifier: "WelcomePageViewController") as! WelcomePageViewController
-            self.window?.rootViewController = UINavigationController(rootViewController: vc)
+            let storyboardOne = UIStoryboard(name: "LaunchScreenStoryboard", bundle: .main)
+                  let mc = storyboardOne.instantiateViewController(withIdentifier: "LaunchScreenAnimationViewController") as! LaunchScreenAnimationViewController
+            self.window?.rootViewController = UINavigationController(rootViewController: mc)
         } else {
             let storyboard = UIStoryboard(name: "LaunchScreenStoryboard", bundle: .main)
             let mc = storyboard.instantiateViewController(withIdentifier: "LaunchScreenAnimationViewController") as! LaunchScreenAnimationViewController
