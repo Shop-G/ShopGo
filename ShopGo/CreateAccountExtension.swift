@@ -97,8 +97,6 @@ extension  CreateScreenViewController : UITextFieldDelegate {
     // Reset the storyboard
     func resetScreen() {
         nextButton.isEnabled = false
-//        nextButton.alpha = 0.9
-        
         usernameTextField.text = ""
         emailTextField.text = ""
         phoneNoTextField.text = ""
