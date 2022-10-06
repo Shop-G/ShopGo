@@ -53,6 +53,8 @@ class CreateScreenViewController: UIViewController  {
         let passwordField = passwordTextField.text
         if (isValidUsername(username: usernameField!)) && usernameField == name && (isValidEmail(email: emailField!)) && emailField == email && (isValidPhoneNo(phoneNo: phoneNoField!)) && phoneNoField == phone &&
             (isValidPassword(password: passwordField!)) && passwordField == password {
+            let vc = UIStoryboard(name: "OtpScreen", bundle: nil).instantiateViewController(withIdentifier: "OtpScreenViewController") as! OtpScreenViewController
+            navigationController?.pushViewController(vc, animated: true)
             
         } else {
             
@@ -60,6 +62,10 @@ class CreateScreenViewController: UIViewController  {
         resetScreen()
     }
     
+    @IBAction func LoginButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
     // name validation
     @IBAction func nameChanged(_ sender: Any) {
         checkForValidForm()

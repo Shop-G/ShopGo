@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -95,11 +96,12 @@
                                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="Uno-4R-miz"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-tj-lTt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-tj-lTt" customClass="CustomButton" customModule="ShopGo" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="599.33333333333337" width="270" height="45"/>
-                                                <color key="backgroundColor" red="0.14018519679999999" green="0.1228703319" blue="0.47139570629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" name="ButtonColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Next">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -122,6 +124,9 @@
                                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                                             <color key="baseForegroundColor" red="0.14018519679999999" green="0.1228703319" blue="0.47139570629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="LoginButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZLm-wp-6fz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -206,6 +211,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="ButtonColor">
+            <color red="0.23921568627450981" green="0.27058823529411763" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

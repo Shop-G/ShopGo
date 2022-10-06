@@ -15,7 +15,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWR-ji-Hhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="963.07692307692309" y="13.507109004739336"/>
+            <point key="canvasLocation" x="1889.3129770992366" y="13.380281690140846"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="kKj-Ss-LFc">
@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLq-9S-89a" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716.9230769230769" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="2643.5114503816794" y="3.5211267605633805"/>
         </scene>
         <!--Welcome Second View Controller-->
         <scene sceneID="BJ8-Jd-ufL">
@@ -73,7 +73,8 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create Account">
-                                            <color key="baseBackgroundColor" red="0.097808622449999993" green="0.24613563799999999" blue="0.54628779819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseBackgroundColor" name="ButtonColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="createAccountBtn:" destination="648-XN-R7V" eventType="touchUpInside" id="SG8-dt-qk7"/>
@@ -87,7 +88,8 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In">
-                                            <color key="baseBackgroundColor" red="0.097808622449999993" green="0.24613563799999999" blue="0.54628779819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseBackgroundColor" name="ButtonColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInBtn:" destination="648-XN-R7V" eventType="touchUpInside" id="LrN-Q7-lH1"/>
@@ -106,6 +108,7 @@
                             <constraint firstItem="8sn-ZE-QBe" firstAttribute="top" secondItem="mOf-NP-9s5" secondAttribute="top" constant="20" id="vcm-0T-4f4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yrx-Ac-pBV"/>
                     <connections>
                         <outlet property="createAccountBtnCorner" destination="Unh-F5-9u3" id="OUx-Ha-ehJ"/>
                         <outlet property="logInBtnCorner" destination="Rrh-jH-4fe" id="i1o-wv-9F9"/>
@@ -113,11 +116,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7F-VX-RKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391.6030534351144" y="2.8169014084507045"/>
+            <point key="canvasLocation" x="3332" y="4"/>
         </scene>
     </scenes>
     <resources>
         <image name="Welcome1" width="500" height="500"/>
         <image name="Welcome2" width="500" height="500"/>
+        <namedColor name="ButtonColor">
+            <color red="0.23921568627450981" green="0.27058823529411763" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
