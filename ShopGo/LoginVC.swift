@@ -33,6 +33,7 @@ class LoginVC: UIViewController {
         
         if (isValidPassword(password: passwordField!)) && passwordField == password && isValidUsername(username: usernameField!) && usernameField == username{
             
+            
         } else {
             isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 4.0, revert: true, textfield: passwordTextfield)
             redUnderlineView.isHidden = false

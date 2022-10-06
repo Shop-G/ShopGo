@@ -41,7 +41,8 @@
 		8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */; };
 		8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54F28DAC7D8001682AE /* CustomButton.swift */; };
 		944A561E28EE111F00F24A25 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944A561D28EE111F00F24A25 /* HomePage.storyboard */; };
-		944A562028EE11DA00F24A25 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944A561F28EE11DA00F24A25 /* HomePageViewController.swift */; };
+		94A5C42428EE4F1E002F5E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */; };
+		94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */; };
 		94B6248A28E3D3170029CBA6 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B6248928E3D3170029CBA6 /* Welcome.storyboard */; };
 		94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */; };
 		94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */; };
@@ -95,7 +96,8 @@
 		944A561B28EE0E2B00F24A25 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		944A561C28EE0E2B00F24A25 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		944A561D28EE111F00F24A25 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
-		944A561F28EE11DA00F24A25 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTextfield+Extension.swift"; sourceTree = "<group>"; };
 		94B6248928E3D3170029CBA6 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSecondViewController.swift; sourceTree = "<group>"; };
@@ -169,7 +171,8 @@
 				6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */,
 				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
 				944A561D28EE111F00F24A25 /* HomePage.storyboard */,
-				944A561F28EE11DA00F24A25 /* HomePageViewController.swift */,
+				94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */,
+				94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */,
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
 				94B6248928E3D3170029CBA6 /* Welcome.storyboard */,
 				94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */,
@@ -396,13 +399,14 @@
 			files = (
 				E071139728DFA47500392291 /* LoginVC.swift in Sources */,
 				94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */,
+				94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */,
 				40FE82FE28DB8DFE009E0072 /* CreateScreenViewController.swift in Sources */,
 				3907C9D028D804ED00019482 /* ViewController.swift in Sources */,
 				406F125628E4B16400D8FD0C /* CreateAccountExtension.swift in Sources */,
+				94A5C42428EE4F1E002F5E45 /* HomeViewController.swift in Sources */,
 				3907C9CC28D804ED00019482 /* AppDelegate.swift in Sources */,
 				6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */,
 				94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */,
-				944A562028EE11DA00F24A25 /* HomePageViewController.swift in Sources */,
 				C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */,
 				C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */,
 				8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */,
