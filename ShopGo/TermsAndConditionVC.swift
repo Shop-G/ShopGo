@@ -22,6 +22,14 @@ class TermsAndConditionVC: UIViewController {
 
     }
     
+    @IBAction func LogInButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func NextButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func readMoreAction(_ sender: UIButton) {
         if isReadMoreTapped {
             readMoreCenter.constant = 0

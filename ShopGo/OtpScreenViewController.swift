@@ -16,15 +16,15 @@ class OtpScreenViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var createAccountButtonOutlet: UIButton!
     
     @IBAction func CreateAccountButton(_ sender: Any) {
-        /*
-         Code for Create Account screen
-         */
+        if textFieldOne.text != "" && textFieldTwo.text != "" && textFieldThree.text != "" && textFieldFour.text != "" {
+            let vc = UIStoryboard(name: "TermsStoryboard", bundle: nil).instantiateViewController(withIdentifier: "TermsAndConditionVC") as! TermsAndConditionVC
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     @IBAction func logInAccountButton(_ sender: Any) {
-        /*
-         Code for login screen
-         */
+        let vc = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginVC
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {
