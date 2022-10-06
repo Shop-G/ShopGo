@@ -106,7 +106,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Log in">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="30"/>
-                                                    <color key="baseForegroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginAction:" destination="LUc-f6-8UH" eventType="touchUpInside" id="peh-tP-o3s"/>

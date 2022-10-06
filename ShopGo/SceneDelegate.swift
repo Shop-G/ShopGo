@@ -13,17 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
-//        if UserDefaults.standard.bool(forKey: "introLaunched") == false{
-//            UserDefaults.standard.set(true, forKey: "introLaunched")
-//            let storyboard = UIStoryboard(name: "Welcome", bundle: .main)
-//            let vc = storyboard.instantiateViewController(identifier: "WelcomePageViewController") as! WelcomePageViewController
-//            self.window?.rootViewController = UINavigationController(rootViewController: vc)
-//        } else {
-//            let storyboard = UIStoryboard(name: "Welcome", bundle: .main)
-//            let mc = storyboard.instantiateViewController(withIdentifier: "secondVC") as! WelcomeSecondViewController
-//            self.window?.rootViewController = UINavigationController(rootViewController: mc)
-//            self.window?.makeKeyAndVisible()
-//        }
+        if UserDefaults.standard.bool(forKey: "introLaunched") == false{
+            UserDefaults.standard.set(true, forKey: "introLaunched")
+            let storyboardOne = UIStoryboard(name: "LaunchScreenStoryboard", bundle: .main)
+            let mc = storyboardOne.instantiateViewController(withIdentifier: "LaunchScreenAnimationViewController") as! LaunchScreenAnimationViewController
+            self.window?.rootViewController = UINavigationController(rootViewController: mc)
+        } else {
+            let storyboard = UIStoryboard(name: "LaunchScreenStoryboard", bundle: .main)
+            let mc = storyboard.instantiateViewController(withIdentifier: "LaunchScreenAnimationViewController") as! LaunchScreenAnimationViewController
+            self.window?.rootViewController = UINavigationController(rootViewController: mc)
+            self.window?.makeKeyAndVisible()
+        }
     }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
