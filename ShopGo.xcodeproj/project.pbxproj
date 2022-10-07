@@ -42,6 +42,7 @@
 		8C5A084C28EE23290093FB9F /* CartTableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A084B28EE23290093FB9F /* CartTableView+extension.swift */; };
 		8C5A084E28EE23A30093FB9F /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A084D28EE23A30093FB9F /* CartTableViewCell.swift */; };
 		8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93154E28E629780020CEBA /* Textfield+extension.swift */; };
+		8CA4545928F0D876000B40EA /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4545828F0D875000B40EA /* CustomButtonView.swift */; };
 		8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */; };
 		8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54F28DAC7D8001682AE /* CustomButton.swift */; };
 		94B6248A28E3D3170029CBA6 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B6248928E3D3170029CBA6 /* Welcome.storyboard */; };
@@ -98,6 +99,7 @@
 		8C5A084B28EE23290093FB9F /* CartTableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartTableView+extension.swift"; sourceTree = "<group>"; };
 		8C5A084D28EE23A30093FB9F /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		8C93154E28E629780020CEBA /* Textfield+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield+extension.swift"; sourceTree = "<group>"; };
+		8CA4545828F0D875000B40EA /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		8CC0A54F28DAC7D8001682AE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		94B6248928E3D3170029CBA6 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				E071139628DFA47500392291 /* LoginVC.swift */,
 				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
+				8CA4545828F0D875000B40EA /* CustomButtonView.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
 				C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */,
@@ -403,6 +406,7 @@
 				E071139728DFA47500392291 /* LoginVC.swift in Sources */,
 				94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */,
 				40FE82FE28DB8DFE009E0072 /* CreateScreenViewController.swift in Sources */,
+				8CA4545928F0D876000B40EA /* CustomButtonView.swift in Sources */,
 				3907C9D028D804ED00019482 /* ViewController.swift in Sources */,
 				406F125628E4B16400D8FD0C /* CreateAccountExtension.swift in Sources */,
 				3907C9CC28D804ED00019482 /* AppDelegate.swift in Sources */,
