@@ -49,7 +49,7 @@
 		C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */; };
 		C3AF913728DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */; };
 		C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */; };
-		E0563CF728F0893F00C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563CF628F0893F00C8630C /* Welcome.storyboard */; };
+		E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563D0028F08D0B00C8630C /* Welcome.storyboard */; };
 		E071139728DFA47500392291 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071139628DFA47500392291 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,7 +103,7 @@
 		E0563CF128F082BB00C8630C /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0563CF228F082BB00C8630C /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0563CF628F0893F00C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Welcome.storyboard; path = ../../Welcome.storyboard; sourceTree = "<group>"; };
+		E0563D0028F08D0B00C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,9 +174,9 @@
 				94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */,
 				E071139628DFA47500392291 /* LoginVC.swift */,
 				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
-				E0563CF628F0893F00C8630C /* Welcome.storyboard */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
+				E0563D0028F08D0B00C8630C /* Welcome.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
 				C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */,
 				C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */,
@@ -339,13 +339,13 @@
 				5962F94B28D985710093CA4D /* GoogleService-Info.plist in Resources */,
 				402C117328DB0BBB00FC11C2 /* CreateAccountScreen.xcassets in Resources */,
 				621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */,
-				E0563CF728F0893F00C8630C /* Welcome.storyboard in Resources */,
 				3907C9D528D804EE00019482 /* Assets.xcassets in Resources */,
 				40FE82FC28DB8DA0009E0072 /* CreateAccountScreen.storyboard in Resources */,
 				8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */,
 				403EFF6F28ED92FC00B9C0B5 /* MyProfileScreen.storyboard in Resources */,
 				C33B9D2228DCC66500DCA1DB /* OtpScreen.storyboard in Resources */,
 				3907C9D328D804ED00019482 /* Main.storyboard in Resources */,
+				E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
