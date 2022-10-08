@@ -25,7 +25,7 @@ class MyProfileTableViewController: UITableViewController {
     
     // Move view 150 points upward
     @objc func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y = -280
+        self.view.frame.origin.y = -285
     }
     
     // Move view to original position
