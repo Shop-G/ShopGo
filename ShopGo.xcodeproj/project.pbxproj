@@ -50,6 +50,7 @@
 		C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */; };
 		C3AF913728DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */; };
 		C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */; };
+		E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563D0028F08D0B00C8630C /* Welcome.storyboard */; };
 		E071139728DFA47500392291 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071139628DFA47500392291 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,10 @@
 		C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
 		C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAnimationViewController.swift; sourceTree = "<group>"; };
+		E0563CF128F082BB00C8630C /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0563CF228F082BB00C8630C /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0563D0028F08D0B00C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,9 +156,9 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
-				4032846028F14879000CA86D /* ShopGo.app */,
-				4032846128F14879000CA86D /* ShopGoTests.xctest */,
-				4032846228F14879000CA86D /* ShopGoUITests.xctest */,
+				E0563CF128F082BB00C8630C /* ShopGo.app */,
+				E0563CF228F082BB00C8630C /* ShopGoTests.xctest */,
+				E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,7 +175,6 @@
 				6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */,
 				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
-				94B6248928E3D3170029CBA6 /* Welcome.storyboard */,
 				94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */,
 				94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */,
 				94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */,
@@ -178,6 +182,7 @@
 				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
+				E0563D0028F08D0B00C8630C /* Welcome.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
 				C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */,
 				C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */,
@@ -234,7 +239,7 @@
 				5962F9A628DBD8160093CA4D /* FirebaseAuth */,
 			);
 			productName = ShopGo;
-			productReference = 4032846028F14879000CA86D /* ShopGo.app */;
+			productReference = E0563CF128F082BB00C8630C /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3907C9DD28D804EE00019482 /* ShopGoTests */ = {
@@ -258,7 +263,7 @@
 				5962F9AE28DBE1CB0093CA4D /* FirebaseAnalyticsSwift */,
 			);
 			productName = ShopGoTests;
-			productReference = 4032846128F14879000CA86D /* ShopGoTests.xctest */;
+			productReference = E0563CF228F082BB00C8630C /* ShopGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3907C9E728D804EF00019482 /* ShopGoUITests */ = {
@@ -282,7 +287,7 @@
 				5962F9B628DBE5220093CA4D /* FirebaseAuth */,
 			);
 			productName = ShopGoUITests;
-			productReference = 4032846228F14879000CA86D /* ShopGoUITests.xctest */;
+			productReference = E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -347,6 +352,7 @@
 				403EFF6F28ED92FC00B9C0B5 /* MyProfileScreen.storyboard in Resources */,
 				C33B9D2228DCC66500DCA1DB /* OtpScreen.storyboard in Resources */,
 				3907C9D328D804ED00019482 /* Main.storyboard in Resources */,
+				E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

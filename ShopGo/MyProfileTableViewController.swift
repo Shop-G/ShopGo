@@ -42,8 +42,3 @@ class MyProfileTableViewController: UITableViewController {
     @IBAction func setting(_ sender: Any) {
     }
 }
-    
-    
-
-
-

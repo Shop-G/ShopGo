@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oi6-Kk-3wC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -10,8 +10,8 @@
         <!--My Profile Table View Controller-->
         <scene sceneID="Kal-qi-Mr8">
             <objects>
-                <tableViewController storyboardIdentifier="MyProfileTableViewController" id="Oi6-Kk-3wC" customClass="MyProfileTableViewController" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ZEV-Sw-38I">
+                <tableViewController storyboardIdentifier="MyProfileTableViewController" id="Dee-zC-JPB" customClass="MyProfileTableViewController" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="thI-mZ-s48">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,9 +57,6 @@
                                                                 <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                 <color key="baseForegroundColor" systemColor="systemGray2Color"/>
                                                             </buttonConfiguration>
-                                                            <connections>
-                                                                <action selector="myAdress:" destination="Oi6-Kk-3wC" eventType="touchUpInside" id="CC9-IM-Il0"/>
-                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sig-YX-X7c">
                                                             <rect key="frame" x="0.0" y="55" width="240" height="40"/>
@@ -71,9 +68,6 @@
                                                                 <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                 <color key="baseForegroundColor" systemColor="systemGray2Color"/>
                                                             </buttonConfiguration>
-                                                            <connections>
-                                                                <action selector="order:" destination="Oi6-Kk-3wC" eventType="touchUpInside" id="Zbh-r6-xj9"/>
-                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grq-vW-yEy">
                                                             <rect key="frame" x="0.0" y="110" width="240" height="40"/>
@@ -85,9 +79,6 @@
                                                                 <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                 <color key="baseForegroundColor" systemColor="systemGray2Color"/>
                                                             </buttonConfiguration>
-                                                            <connections>
-                                                                <action selector="setting:" destination="Oi6-Kk-3wC" eventType="touchUpInside" id="RvI-IU-QDO"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -118,9 +109,6 @@
                                                     <rect key="frame" x="20" y="0.0" width="370" height="86"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="Oi6-Kk-3wC" id="JuJ-x9-7hg"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -142,9 +130,6 @@
                                                     <rect key="frame" x="20" y="0.0" width="370" height="86"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="Oi6-Kk-3wC" id="9Jl-hr-XhO"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -166,9 +151,6 @@
                                                     <rect key="frame" x="20" y="0.0" width="370" height="86"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="Oi6-Kk-3wC" id="Rb7-Za-FNb"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -190,9 +172,6 @@
                                                     <rect key="frame" x="20" y="0.0" width="370" height="86"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="Oi6-Kk-3wC" id="Uwf-BJ-ZUi"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -214,9 +193,6 @@
                                                     <rect key="frame" x="20" y="0.0" width="370" height="86"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="Oi6-Kk-3wC" id="8xw-2G-8Ib"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -230,10 +206,6 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="Oi6-Kk-3wC" id="Squ-EF-f3g"/>
-                            <outlet property="delegate" destination="Oi6-Kk-3wC" id="UYL-8K-3J8"/>
-                        </connections>
                     </tableView>
                     <connections>
                         <outlet property="adressButton" destination="svN-gR-JCa" id="AYm-i9-0t4"/>
