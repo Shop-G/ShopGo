@@ -24,7 +24,7 @@ class LoginVC: UIViewController {
         configureTextfieldIcons()
         resetForm()
         redUnderlineView.isHidden = true
-        hideKeyboardWhenTappedAround()
+        hideKeyboardWhenTappedAround()   
     }
     
     @IBAction func loginAction(_ sender: Any) {

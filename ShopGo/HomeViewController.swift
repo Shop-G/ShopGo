@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         placeLeftImageToTextField()
         modification()
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
     override var prefersStatusBarHidden: Bool {
         return true
