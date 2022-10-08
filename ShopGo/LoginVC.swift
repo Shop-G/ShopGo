@@ -32,6 +32,8 @@ class LoginVC: UIViewController {
         let usernameField = usernameTextfield.text
         
         if (isValidPassword(password: passwordField!)) && passwordField == password && isValidUsername(username: usernameField!) && usernameField == username{
+            let  storyboard = UIStoryboard(name: "MyProfileScreen", bundle: nil).instantiateViewController(withIdentifier: "MyProfileTableViewController") as! MyProfileTableViewController
+            navigationController?.pushViewController(storyboard, animated: true)
             
         } else {
             isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 4.0, revert: true, textfield: passwordTextfield)

@@ -16,12 +16,21 @@ class MyProfileTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setRadius()
+        hideKeyboardTappedAccount()
+        
+        // Listen the keyboards events
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    //Profile Image corner radius
-    func setRadius() {
-        profileImage.layer.cornerRadius = 10
-        profileImage.clipsToBounds = true
+    // Move view 150 points upward
+    @objc func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y = -280
+    }
+    
+    // Move view to original position
+    @objc func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y = 0
     }
     
     @IBAction func myAdress(_ sender: Any) {
