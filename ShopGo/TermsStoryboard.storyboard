@@ -11,7 +11,7 @@
         <!--Terms And ConditionVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="TermsAndConditionVC" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TermsAndConditionVC" id="Y6W-OH-hqX" customClass="TermsAndConditionVC" customModule="ShopGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" red="0.054901964960000001" green="0.047058824450000002" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="LogInButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kw6-Od-rut"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cg-Pd-VaQ">
                                 <rect key="frame" x="20" y="717.66666666666663" width="350" height="25.333333333333371"/>
@@ -119,10 +122,13 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dtd-7w-glk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh2-SM-ZcO">
                                 <rect key="frame" x="50" y="289" width="290" height="162.33333333333337"/>
-                                <mutableString key="text">How to find a SWIFT code. It can be found as a set of 8 or 11 digits on your bank statement or you can usually find it via online banking or on your bank's website. These numbers are used to represent your bank branch and follow an international standard format for financial transactions. represent your bank branch and follow an international standard format for financial transactions.</mutableString>
+                                <string key="text">How to find a SWIFT code. It can be found as a set of 8 or 11 digits on your bank statement or you can usually find it via online banking or on your bank's website. These numbers are used to represent your bank branch and follow an international standard format for financial transactions. represent your bank branch and follow an international standard format for financial transactions.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>

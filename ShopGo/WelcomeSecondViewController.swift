@@ -18,7 +18,12 @@ class WelcomeSecondViewController: UIViewController {
     @IBOutlet weak var createAccountBtnCorner: UIButton!
     @IBOutlet weak var logInBtnCorner: UIButton!
     @IBAction func createAccountBtn(_ sender: Any) {
+        let vc = UIStoryboard(name: "CreateAccountScreen", bundle: nil).instantiateViewController(withIdentifier: "CreateScreenViewController") as! CreateScreenViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
+    
     @IBAction func logInBtn(_ sender: Any) {
-    } 
+        let vc = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
