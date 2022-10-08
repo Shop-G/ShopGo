@@ -19,32 +19,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiH-Qg-tYb">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8C-Sd-QFK">
-                                        <rect key="frame" x="157" y="44" width="76.333333333333314" height="23"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-xc-SsX">
-                                        <rect key="frame" x="8" y="19" width="40" height="54"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="54" id="BBs-Qn-SwW"/>
-                                            <constraint firstAttribute="width" constant="40" id="i53-e5-0eg"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="menu 1"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr8-bm-C14">
-                                        <rect key="frame" x="306.33333333333331" y="22" width="75" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="Efk-lW-S87"/>
-                                            <constraint firstAttribute="width" constant="75" id="Frn-3c-m2r"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="camera"/>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zRQ-O2-9M8">
                                         <rect key="frame" x="17.666666666666657" y="81" width="355" height="33"/>
                                         <subviews>
@@ -134,23 +108,53 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="location"/>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="4Y7-DU-3Wk">
+                                        <rect key="frame" x="10" y="27" width="370.33333333333331" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-xc-SsX">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="56" id="Cc8-DC-75w"/>
+                                                    <constraint firstAttribute="height" constant="46" id="ewV-me-VLU"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="menu 1"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8C-Sd-QFK">
+                                                <rect key="frame" x="147" y="0.0" width="76.333333333333314" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr8-bm-C14">
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="56" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="gQ2-9w-5bC"/>
+                                                    <constraint firstAttribute="width" constant="56" id="ti1-fE-3ho"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="camera"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="W8C-Sd-QFK" firstAttribute="centerY" secondItem="4Y7-DU-3Wk" secondAttribute="centerY" id="O0h-Xn-BPd"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="wvl-9R-V3I" firstAttribute="centerX" secondItem="iiH-Qg-tYb" secondAttribute="centerX" id="0tJ-lh-pMs"/>
-                                    <constraint firstAttribute="trailing" secondItem="kr8-bm-C14" secondAttribute="trailing" constant="8.6699999999999999" id="5XI-br-GTO"/>
                                     <constraint firstItem="zRQ-O2-9M8" firstAttribute="top" secondItem="iiH-Qg-tYb" secondAttribute="top" constant="81" id="CuY-ld-xKc"/>
-                                    <constraint firstItem="zRQ-O2-9M8" firstAttribute="centerX" secondItem="W8C-Sd-QFK" secondAttribute="centerX" id="L2p-ri-BGx"/>
+                                    <constraint firstItem="zRQ-O2-9M8" firstAttribute="width" secondItem="wvl-9R-V3I" secondAttribute="width" multiplier="1.10938" id="DHs-Bd-Sxu"/>
                                     <constraint firstItem="T7d-Ja-fRp" firstAttribute="centerY" secondItem="wvl-9R-V3I" secondAttribute="centerY" id="Tbh-Mf-47A"/>
-                                    <constraint firstItem="zRQ-O2-9M8" firstAttribute="top" secondItem="bmT-xc-SsX" secondAttribute="bottom" constant="8" id="X43-DS-0LQ"/>
-                                    <constraint firstItem="W8C-Sd-QFK" firstAttribute="baseline" secondItem="bmT-xc-SsX" secondAttribute="baseline" id="YkP-QA-oKg"/>
                                     <constraint firstAttribute="trailing" secondItem="T7d-Ja-fRp" secondAttribute="trailing" constant="35" id="Ztl-3D-shZ"/>
-                                    <constraint firstItem="W8C-Sd-QFK" firstAttribute="centerX" secondItem="iiH-Qg-tYb" secondAttribute="centerX" id="fJ6-dY-xh2"/>
-                                    <constraint firstItem="W8C-Sd-QFK" firstAttribute="bottom" secondItem="kr8-bm-C14" secondAttribute="bottom" id="jb6-z4-EBf"/>
+                                    <constraint firstItem="4Y7-DU-3Wk" firstAttribute="centerX" secondItem="iiH-Qg-tYb" secondAttribute="centerX" id="dBe-UI-BLx"/>
                                     <constraint firstItem="wvl-9R-V3I" firstAttribute="top" secondItem="zRQ-O2-9M8" secondAttribute="bottom" constant="8" id="nET-dR-OSk"/>
                                     <constraint firstItem="zRQ-O2-9M8" firstAttribute="centerX" secondItem="iiH-Qg-tYb" secondAttribute="centerX" id="w0z-It-gBX"/>
                                     <constraint firstAttribute="width" constant="390" id="x5V-oB-WY6"/>
-                                    <constraint firstItem="bmT-xc-SsX" firstAttribute="leading" secondItem="iiH-Qg-tYb" secondAttribute="leading" constant="8" id="xHb-iY-dSS"/>
+                                    <constraint firstItem="4Y7-DU-3Wk" firstAttribute="top" secondItem="iiH-Qg-tYb" secondAttribute="top" constant="27" id="zaI-LC-cmi"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -187,9 +191,6 @@
         <image name="menu 1" width="32" height="32"/>
         <image name="rocket" width="40" height="40"/>
         <image name="woman" width="30" height="30"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
