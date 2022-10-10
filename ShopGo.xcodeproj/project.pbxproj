@@ -45,7 +45,6 @@
 		944A561E28EE111F00F24A25 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944A561D28EE111F00F24A25 /* HomePage.storyboard */; };
 		94A5C42428EE4F1E002F5E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */; };
 		94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */; };
-		94B6248A28E3D3170029CBA6 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B6248928E3D3170029CBA6 /* Welcome.storyboard */; };
 		94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */; };
 		94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */; };
 		94B6249028E3D5DA0029CBA6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */; };
@@ -53,7 +52,7 @@
 		C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */; };
 		C3AF913728DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */; };
 		C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */; };
-		E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563D0028F08D0B00C8630C /* Welcome.storyboard */; };
+		E0563D8F28F4CA4700C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563D8E28F4CA4700C8630C /* Welcome.storyboard */; };
 		E071139728DFA47500392291 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071139628DFA47500392291 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,9 +96,6 @@
 		8C93154E28E629780020CEBA /* Textfield+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield+extension.swift"; sourceTree = "<group>"; };
 		8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		8CC0A54F28DAC7D8001682AE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		944A561A28EE0E2B00F24A25 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		944A561B28EE0E2B00F24A25 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		944A561C28EE0E2B00F24A25 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		944A561D28EE111F00F24A25 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTextfield+Extension.swift"; sourceTree = "<group>"; };
@@ -114,7 +110,7 @@
 		E0563CF128F082BB00C8630C /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0563CF228F082BB00C8630C /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0563D0028F08D0B00C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		E0563D8E28F4CA4700C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +160,7 @@
 				E0563CF128F082BB00C8630C /* ShopGo.app */,
 				E0563CF228F082BB00C8630C /* ShopGoTests.xctest */,
 				E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */,
+				E0563D8D28F4CA2200C8630C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,12 +181,12 @@
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
 				94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */,
 				94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */,
+				E0563D8E28F4CA4700C8630C /* Welcome.storyboard */,
 				94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */,
 				E071139628DFA47500392291 /* LoginVC.swift */,
 				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
-				E0563D0028F08D0B00C8630C /* Welcome.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
 				C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */,
 				C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */,
@@ -220,6 +217,14 @@
 				3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */,
 			);
 			path = ShopGoUITests;
+			sourceTree = "<group>";
+		};
+		E0563D8D28F4CA2200C8630C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				94B6248928E3D3170029CBA6 /* Welcome.storyboard */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,10 +363,9 @@
 				8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */,
 				403EFF6F28ED92FC00B9C0B5 /* MyProfileScreen.storyboard in Resources */,
 				944A561E28EE111F00F24A25 /* HomePage.storyboard in Resources */,
-				94B6248A28E3D3170029CBA6 /* Welcome.storyboard in Resources */,
 				C33B9D2228DCC66500DCA1DB /* OtpScreen.storyboard in Resources */,
 				3907C9D328D804ED00019482 /* Main.storyboard in Resources */,
-				E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */,
+				E0563D8F28F4CA4700C8630C /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
