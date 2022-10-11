@@ -1,12 +1,13 @@
 //
-//  CustomButton.swift
+//  CustomButtonView.swift
 //  ShopGo
 //
-//  Created by Quratulain on 9/21/22.
+//  Created by Quratulain on 10/8/22.
 //
 
+import Foundation
 import UIKit
-class CustomButton : UIButton {
+class customButtonView : UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,5 +29,3 @@ class CustomButton : UIButton {
         layer.shadowColor = UIColor.gray.cgColor
     }
 }
-
-
