@@ -47,6 +47,9 @@
 		8CA4545928F0D876000B40EA /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4545828F0D875000B40EA /* CustomButtonView.swift */; };
 		8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */; };
 		8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54F28DAC7D8001682AE /* CustomButton.swift */; };
+		944A561E28EE111F00F24A25 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944A561D28EE111F00F24A25 /* HomePage.storyboard */; };
+		94A5C42428EE4F1E002F5E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */; };
+		94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */; };
 		94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */; };
 		94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */; };
 		94B6249028E3D5DA0029CBA6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */; };
@@ -54,7 +57,7 @@
 		C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */; };
 		C3AF913728DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */; };
 		C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */; };
-		E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563D0028F08D0B00C8630C /* Welcome.storyboard */; };
+		E0563D8F28F4CA4700C8630C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0563D8E28F4CA4700C8630C /* Welcome.storyboard */; };
 		E071139728DFA47500392291 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071139628DFA47500392291 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,7 +112,13 @@
 		8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		8CC0A54F28DAC7D8001682AE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 
+		944A561D28EE111F00F24A25 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTextfield+Extension.swift"; sourceTree = "<group>"; };
 		94B6248928E3D3170029CBA6 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+
+		94B6248928E3D3170029CBA6 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+
 
 		94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSecondViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +130,7 @@
 		E0563CF128F082BB00C8630C /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0563CF228F082BB00C8630C /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0563D0028F08D0B00C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		E0563D8E28F4CA4700C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +182,8 @@
 				E0563CF228F082BB00C8630C /* ShopGoTests.xctest */,
 				E0563CF328F082BB00C8630C /* ShopGoUITests.xctest */,
 
+				E0563D8D28F4CA2200C8630C /* Recovered References */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -185,9 +196,11 @@
 				406F125528E4B16400D8FD0C /* CreateAccountExtension.swift */,
 				40FE82FB28DB8DA0009E0072 /* CreateAccountScreen.storyboard */,
 				40FE82FD28DB8DFE009E0072 /* CreateScreenViewController.swift */,
-				402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */,
 				6217730028DA451E001CDFB4 /* TermsAndConditionVC.swift */,
 				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
+				944A561D28EE111F00F24A25 /* HomePage.storyboard */,
+				94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */,
+				94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */,
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
 
 				94B6248928E3D3170029CBA6 /* Welcome.storyboard */,
@@ -198,19 +211,20 @@
 
 				94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */,
 				94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */,
+				E0563D8E28F4CA4700C8630C /* Welcome.storyboard */,
 				94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */,
 				E071139628DFA47500392291 /* LoginVC.swift */,
 				8C93154E28E629780020CEBA /* Textfield+extension.swift */,
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				8CA4545828F0D875000B40EA /* CustomButtonView.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
-				E0563D0028F08D0B00C8630C /* Welcome.storyboard */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
 				C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */,
 				C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */,
 				C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */,
 				403EFF6E28ED92FC00B9C0B5 /* MyProfileScreen.storyboard */,
 				403EFF7028ED936E00B9C0B5 /* MyProfileTableViewController.swift */,
+				402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */,
 				3907C9D428D804EE00019482 /* Assets.xcassets */,
 				3907C9D628D804EE00019482 /* LaunchScreen.storyboard */,
 				5962F94A28D985710093CA4D /* GoogleService-Info.plist */,
@@ -234,6 +248,14 @@
 				3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */,
 			);
 			path = ShopGoUITests;
+			sourceTree = "<group>";
+		};
+		E0563D8D28F4CA2200C8630C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				94B6248928E3D3170029CBA6 /* Welcome.storyboard */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,9 +400,10 @@
 				40FE82FC28DB8DA0009E0072 /* CreateAccountScreen.storyboard in Resources */,
 				8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */,
 				403EFF6F28ED92FC00B9C0B5 /* MyProfileScreen.storyboard in Resources */,
+				944A561E28EE111F00F24A25 /* HomePage.storyboard in Resources */,
 				C33B9D2228DCC66500DCA1DB /* OtpScreen.storyboard in Resources */,
 				3907C9D328D804ED00019482 /* Main.storyboard in Resources */,
-				E0563D0128F08D0B00C8630C /* Welcome.storyboard in Resources */,
+				E0563D8F28F4CA4700C8630C /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +454,12 @@
 			files = (
 				E071139728DFA47500392291 /* LoginVC.swift in Sources */,
 				94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */,
+				94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */,
 				40FE82FE28DB8DFE009E0072 /* CreateScreenViewController.swift in Sources */,
 				8CA4545928F0D876000B40EA /* CustomButtonView.swift in Sources */,
 				3907C9D028D804ED00019482 /* ViewController.swift in Sources */,
 				406F125628E4B16400D8FD0C /* CreateAccountExtension.swift in Sources */,
+				94A5C42428EE4F1E002F5E45 /* HomeViewController.swift in Sources */,
 				3907C9CC28D804ED00019482 /* AppDelegate.swift in Sources */,
 				6217730128DA451E001CDFB4 /* TermsAndConditionVC.swift in Sources */,
 				8C5A084828EE19350093FB9F /* CartViewController.swift in Sources */,
