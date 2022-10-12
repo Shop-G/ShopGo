@@ -55,6 +55,7 @@ class LoginVC: UIViewController {
         print("return")
         return true
     }
+    
     func tabBar(){
         let tabBarVC = UITabBarController()
         let vcOne = UIStoryboard(name: "HomePage", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
@@ -73,7 +74,8 @@ class LoginVC: UIViewController {
         tabBarVC.modalPresentationStyle = .fullScreen
         present(tabBarVC, animated: true)
         tabBarApperence(tabBarVC: tabBarVC)
-    }
+        }
+    
     func tabBarApperence(tabBarVC : UITabBarController) {
         var tabBarheight = tabBarVC.tabBar.frame
         let tabBarItemAppearance = UITabBarItemAppearance()
