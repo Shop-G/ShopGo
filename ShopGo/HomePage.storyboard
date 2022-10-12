@@ -172,6 +172,7 @@
                     <connections>
                         <outlet property="burgerMenu" destination="bmT-xc-SsX" id="dtN-f2-NfC"/>
                         <outlet property="childrenOption" destination="M6v-JS-fZs" id="nTX-yR-Qhn"/>
+                        <outlet property="locationIcon" destination="T7d-Ja-fRp" id="WHp-V4-kY1"/>
                         <outlet property="menOption" destination="cwG-I7-ABs" id="sAj-rc-Ym6"/>
                         <outlet property="trendingOption" destination="Myh-Ft-44h" id="zY3-Wf-Kai"/>
                         <outlet property="typeText" destination="wvl-9R-V3I" id="zRa-gi-f4U"/>

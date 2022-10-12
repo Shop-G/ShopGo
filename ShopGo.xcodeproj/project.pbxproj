@@ -96,15 +96,15 @@
 		94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSecondViewController.swift; sourceTree = "<group>"; };
 		94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		C32EFB5128F6D769003FB990 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32EFB5228F6D769003FB990 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32EFB5328F6D769003FB990 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OtpScreen.storyboard; sourceTree = "<group>"; };
 		C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
 		C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAnimationViewController.swift; sourceTree = "<group>"; };
 		E0563D8E28F4CA4700C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		E0AD6D4328F61CE300EB90C1 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShopGo.app; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGo.app"; sourceTree = "<absolute>"; };
-		E0AD6D4428F61CE300EB90C1 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoTests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoTests.xctest"; sourceTree = "<absolute>"; };
-		E0AD6D4528F61CE300EB90C1 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoUITests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +124,9 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
+				C32EFB5128F6D769003FB990 /* ShopGo.app */,
+				C32EFB5228F6D769003FB990 /* ShopGoTests.xctest */,
+				C32EFB5328F6D769003FB990 /* ShopGoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,8 +164,8 @@
 				C33B9D2328DCC67700DCA1DB /* OtpScreenViewController.swift */,
 				403EFF6E28ED92FC00B9C0B5 /* MyProfileScreen.storyboard */,
 				403EFF7028ED936E00B9C0B5 /* MyProfileTableViewController.swift */,
-				402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */,
 				3907C9D428D804EE00019482 /* Assets.xcassets */,
+				402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */,
 				3907C9D628D804EE00019482 /* LaunchScreen.storyboard */,
 				3907C9D928D804EE00019482 /* Info.plist */,
 			);
@@ -205,7 +208,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGo;
-			productReference = E0AD6D4328F61CE300EB90C1 /* ShopGo.app */;
+			productReference = C32EFB5128F6D769003FB990 /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3907C9DD28D804EE00019482 /* ShopGoTests */ = {
@@ -224,7 +227,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGoTests;
-			productReference = E0AD6D4428F61CE300EB90C1 /* ShopGoTests.xctest */;
+			productReference = C32EFB5228F6D769003FB990 /* ShopGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3907C9E728D804EF00019482 /* ShopGoUITests */ = {
@@ -243,7 +246,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGoUITests;
-			productReference = E0AD6D4528F61CE300EB90C1 /* ShopGoUITests.xctest */;
+			productReference = C32EFB5328F6D769003FB990 /* ShopGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
