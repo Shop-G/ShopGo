@@ -14,7 +14,7 @@ extension  CreateScreenViewController : UITextFieldDelegate {
         nextButton.clipsToBounds = true
         nextButton.layer.masksToBounds = false
         nextButton.layer.shadowColor = UIColor.gray.cgColor
-        nextButton.layer.shadowOffset = CGSize(width: 0, height: 2)
+        nextButton.layer.shadowOffset = CGSize(width: 3, height: 3)
         nextButton.layer.shadowRadius = 10
         nextButton.layer.shadowOpacity = 1.0
     }
