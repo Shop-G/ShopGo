@@ -24,7 +24,7 @@ class LoginVC: UIViewController {
         configureTextfieldIcons()
         resetForm()
         redUnderlineView.isHidden = true
-        hideKeyboardWhenTappedAround()   
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func loginAction(_ sender: Any) {
@@ -32,10 +32,8 @@ class LoginVC: UIViewController {
         let usernameField = usernameTextfield.text
         
         if (isValidPassword(password: passwordField!)) && passwordField == password && isValidUsername(username: usernameField!) && usernameField == username{
-            let st = UIStoryboard(name: "HomePage", bundle: nil)
-            let vc = st.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            navigationController?.pushViewController(vc, animated: true)
-            
+//            presenting TabBar 
+            present(tabBar(tabBarImages: [tabBarData.Home.tabBarImages,tabBarData.Cart.tabBarImages,tabBarData.Profile.tabBarImages], viewControllers: [tabBarData.Home.viewControllers,tabBarData.Cart.viewControllers,tabBarData.Profile.viewControllers]), animated: true)
         } else {
             isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 4.0, revert: true, textfield: passwordTextfield)
             redUnderlineView.isHidden = false
