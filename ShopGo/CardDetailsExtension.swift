@@ -33,7 +33,7 @@ extension CardDetailsViewController : UITextFieldDelegate {
         if textField == usernameTextField {
             maxLength = 20
         } else if textField == cardNoTextField {
-            maxLength = 20
+            maxLength = 16
         } else if textField == expMonthTextField {
             maxLength = 2
         } else if textField == expDateTextField {
