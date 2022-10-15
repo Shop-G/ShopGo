@@ -9,17 +9,36 @@ import Foundation
 import UIKit
 extension HomeViewController {
     
-    //add left image and padding in textfield
-    func placeLeftImageToTextField() {
-        let imageIcon = UIImageView()
-        imageIcon.image = UIImage(named: "magnifying")
+    // Left textField image setup
+    func placeLeftImage(textField: UITextField , image: UIImage) {
+        let leftImage = UIImageView()
+        leftImage.image = image
         let contentView = UIView()
-        contentView.addSubview(imageIcon)
-        contentView.frame = CGRect(x: 0, y: 0, width: UIImage(named: "magnifying")!.size.width, height: UIImage(named: "magnifying")!.size.height)
-        imageIcon.frame = CGRect(x:10, y: 0, width: UIImage(named: "magnifying")!.size.width, height: UIImage(named: "magnifying")!.size.height)
-        typeText.leftView = contentView
-        typeText.leftViewMode = .always
-        typeText.clearButtonMode = .whileEditing
+        contentView.addSubview(leftImage)
+        contentView.frame = CGRectMake(0, 0, 25, 20)
+        leftImage.frame = CGRectMake(10, 0, 25, 20)
+        textField.leftView = contentView
+        textField.leftViewMode = .always
+    }
+    
+    // Right textField image setup
+    func placeRightImage(textField: UITextField , image: UIImage) {
+        let leftImage = UIImageView()
+        leftImage.image = image
+        let contentView = UIView()
+        contentView.addSubview(leftImage)
+        contentView.frame = CGRectMake(0, 0, 25, 20)
+        leftImage.frame = CGRectMake(-10, 0, 25, 20)
+        textField.rightView = contentView
+        textField.rightViewMode = .always
+    }
+    
+    // Configuring textfield icons and padding
+    func configureTextfieldIcons() {
+        guard let magnifyingImage = UIImage(named: "magnifying") else {return}
+        self.placeLeftImage(textField: typeText, image: magnifyingImage)
+        guard let locationImage = UIImage(named: "location") else {return}
+        self.placeRightImage(textField: typeText, image: locationImage)
     }
     
     // modifying the corner radius of buttons and border style in homepage

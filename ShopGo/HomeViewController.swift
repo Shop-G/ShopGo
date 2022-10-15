@@ -6,8 +6,9 @@
 //
 
 import UIKit
+
 class HomeViewController: UIViewController {
-    
+   
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(CarouselTableViewCell.self, forCellReuseIdentifier: CarouselTableViewCell.identifier)
@@ -28,7 +29,7 @@ class HomeViewController: UIViewController {
         tableViewConfiguration()
         tableView.delegate = self
         tableView.dataSource = self
-        placeLeftImageToTextField()
+        configureTextfieldIcons()
         modification()
         self.navigationItem.setHidesBackButton(true, animated: false)
     }
@@ -44,44 +45,65 @@ class HomeViewController: UIViewController {
     @IBAction func childrenBtn(_ sender: Any) {
     }
 }
-    
-    // TableView Setup
+
+// TableView Setup
 extension  HomeViewController : UITableViewDelegate, UITableViewDataSource {
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
     }
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         
-         if indexPath.row < 1 {
-             let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath) as! VariationTwoTableViewCell
-             cell.imageView?.image = UIImage(named: "Cart2")
-             cell.imageView?.layer.cornerRadius = 10
-             cell.imageView?.layer.masksToBounds = true
-             return cell
-         }
-         
-             let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
-             cell.imageView?.image = UIImage(named: "Cart1")
-             cell.imageView?.layer.cornerRadius = 10
-             cell.imageView?.layer.masksToBounds = true
-             return cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
+            cell.collectionView.reloadData()
+            cell.selectionStyle = .none
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath) as! VariationTwoTableViewCell
+            cell.collectionView.reloadData()
+            cell.selectionStyle = .none
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
+            cell.collectionView.reloadData()
+            cell.selectionStyle = .none
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath) as! VariationTwoTableViewCell
+            cell.collectionView.reloadData()
+            cell.selectionStyle = .none
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath)
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 250
-        } else {
-            return 150
         }
+        else if indexPath.row == 2 {
+            return 250
+        }
+        return 150
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 150
     }
     
     func tableViewConfiguration() {
-        
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         view.addSubview(tableView)
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([tableView.topAnchor.constraint(equalTo: self.typeText.bottomAnchor,constant: 10) , tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0) , tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 0) , tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: 0)])
+        NSLayoutConstraint.activate([tableView.topAnchor.constraint(equalTo: self.typeText.bottomAnchor,constant: 10) , tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -50) , tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 0) , tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: 0)])
     }
 }
 

@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,7 +74,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create Account">
-                                            <color key="baseBackgroundColor" red="0.097808622449999993" green="0.24613563799999999" blue="0.54628779819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" name="ButtonColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="createAccountBtn:" destination="648-XN-R7V" eventType="touchUpInside" id="SG8-dt-qk7"/>
@@ -87,7 +88,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In">
-                                            <color key="baseBackgroundColor" red="0.097808622449999993" green="0.24613563799999999" blue="0.54628779819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" name="ButtonColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInBtn:" destination="648-XN-R7V" eventType="touchUpInside" id="LrN-Q7-lH1"/>
@@ -119,5 +120,8 @@
     <resources>
         <image name="Welcome1" width="500" height="500"/>
         <image name="Welcome2" width="500" height="500"/>
+        <namedColor name="ButtonColor">
+            <color red="0.23921568627450981" green="0.27058823529411763" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
