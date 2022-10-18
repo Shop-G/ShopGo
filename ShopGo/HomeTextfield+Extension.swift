@@ -21,7 +21,6 @@ extension HomeViewController {
         typeText.leftViewMode = .always
         typeText.clearButtonMode = .whileEditing
     }
-    
     // modifying the corner radius of buttons and border style in homepage
     func modification(){
         trendingOption.layer.cornerRadius = 5
@@ -29,6 +28,29 @@ extension HomeViewController {
         womenOption.layer.cornerRadius = 5
         childrenOption.layer.cornerRadius = 5
         typeText.borderStyle = UITextField.BorderStyle.roundedRect
+    }
+    // present the list of menu on HomeViewController when menu button is pressed
+    func showBurgerMenu() {
+        sideView.isHidden = false
+        self.view.bringSubviewToFront(sideView)
+        if !isSideViewOpen{
+            isSideViewOpen = true
+            sideView.frame = CGRect(x: 0, y: 120, width: 0, height: 763)
+            tableViewSideBar.frame =  CGRect(x: 0, y: 97, width: 316, height: 406)
+            UIView.animate(withDuration: 0.1) {
+                self.sideView.frame = CGRect(x: 0, y: 120, width: 316, height: 763)
+                self.tableViewSideBar.frame =  CGRect(x: 0, y: 97, width: 316, height: 406)
+            }
+        }else{
+            sideView.isHidden = true
+            isSideViewOpen = false
+            sideView.frame = CGRect(x: 0, y: 120, width: 316, height: 763)
+            tableViewSideBar.frame =  CGRect(x: 0, y: 97, width: 316, height: 406)
+            UIView.animate(withDuration: 0.1) {
+                self.sideView.frame = CGRect(x: 0, y: 120, width: 0, height: 763)
+                self.tableViewSideBar.frame =  CGRect(x: 0, y: 97, width: 316, height: 406)
+            }
+        }
     }
 }
 
