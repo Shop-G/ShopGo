@@ -35,6 +35,8 @@
 		944A561E28EE111F00F24A25 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944A561D28EE111F00F24A25 /* HomePage.storyboard */; };
 		94A5C42428EE4F1E002F5E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */; };
 		94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */; };
+		94A80E4528FE220800732977 /* MenuButtonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A80E4428FE220800732977 /* MenuButtonDataModel.swift */; };
+		94A80E4728FE23B200732977 /* HomePageMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A80E4628FE23B200732977 /* HomePageMenuCell.swift */; };
 		94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */; };
 		94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */; };
 		94B6249028E3D5DA0029CBA6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */; };
@@ -93,6 +95,11 @@
 		944A561D28EE111F00F24A25 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTextfield+Extension.swift"; sourceTree = "<group>"; };
+		94A80E3F28FE1FC600732977 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A80E4028FE1FC600732977 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A80E4128FE1FC600732977 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A80E4428FE220800732977 /* MenuButtonDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonDataModel.swift; sourceTree = "<group>"; };
+		94A80E4628FE23B200732977 /* HomePageMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageMenuCell.swift; sourceTree = "<group>"; };
 		94B6248B28E3D34E0029CBA6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		94B6248D28E3D5A30029CBA6 /* WelcomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSecondViewController.swift; sourceTree = "<group>"; };
 		94B6248F28E3D5DA0029CBA6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
@@ -102,9 +109,6 @@
 		C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAnimationViewController.swift; sourceTree = "<group>"; };
 		E0563D8E28F4CA4700C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		E0AD6D4328F61CE300EB90C1 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShopGo.app; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGo.app"; sourceTree = "<absolute>"; };
-		E0AD6D4428F61CE300EB90C1 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoTests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoTests.xctest"; sourceTree = "<absolute>"; };
-		E0AD6D4528F61CE300EB90C1 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoUITests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,9 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
+				94A80E3F28FE1FC600732977 /* ShopGo.app */,
+				94A80E4028FE1FC600732977 /* ShopGoTests.xctest */,
+				94A80E4128FE1FC600732977 /* ShopGoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,8 @@
 				621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */,
 				944A561D28EE111F00F24A25 /* HomePage.storyboard */,
 				94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */,
+				94A80E4628FE23B200732977 /* HomePageMenuCell.swift */,
+				94A80E4428FE220800732977 /* MenuButtonDataModel.swift */,
 				94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */,
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
 				8C5A084328EE18990093FB9F /* Cart.storyboard */,
@@ -205,7 +214,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGo;
-			productReference = E0AD6D4328F61CE300EB90C1 /* ShopGo.app */;
+			productReference = 94A80E3F28FE1FC600732977 /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3907C9DD28D804EE00019482 /* ShopGoTests */ = {
@@ -224,7 +233,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGoTests;
-			productReference = E0AD6D4428F61CE300EB90C1 /* ShopGoTests.xctest */;
+			productReference = 94A80E4028FE1FC600732977 /* ShopGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3907C9E728D804EF00019482 /* ShopGoUITests */ = {
@@ -243,7 +252,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGoUITests;
-			productReference = E0AD6D4528F61CE300EB90C1 /* ShopGoUITests.xctest */;
+			productReference = 94A80E4128FE1FC600732977 /* ShopGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -347,6 +356,8 @@
 				8C5A084E28EE23A30093FB9F /* CartTableViewCell.swift in Sources */,
 				94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */,
 				C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */,
+				94A80E4728FE23B200732977 /* HomePageMenuCell.swift in Sources */,
+				94A80E4528FE220800732977 /* MenuButtonDataModel.swift in Sources */,
 				C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */,
 				8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */,
 				3907C9CE28D804ED00019482 /* SceneDelegate.swift in Sources */,
