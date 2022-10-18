@@ -33,6 +33,10 @@
 		8CA5E62028FAD8A20054F191 /* VariationTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5E61F28FAD8A20054F191 /* VariationTwoCollectionViewCell.swift */; };
 		8CC0A54A28DA6EB3001682AE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */; };
 		8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0A54F28DAC7D8001682AE /* CustomButton.swift */; };
+		8CD0686928FDC2E900050C3D /* CarouselTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0686828FDC2E900050C3D /* CarouselTwoCollectionViewCell.swift */; };
+		8CD0686B28FDC30300050C3D /* CarouselTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0686A28FDC30300050C3D /* CarouselTwoTableViewCell.swift */; };
+		8CD6CC6E28FE1A86002F6699 /* VariationThreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6CC6D28FE1A86002F6699 /* VariationThreeTableViewCell.swift */; };
+		8CD6CC7028FE1A9D002F6699 /* VariationThreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6CC6F28FE1A9D002F6699 /* VariationThreeCollectionViewCell.swift */; };
 		8CE8A82E28F8BA3D00D5F3BC /* CarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8A82D28F8BA3D00D5F3BC /* CarouselTableViewCell.swift */; };
 		8CE8A83028F8C6D900D5F3BC /* VariationTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8A82F28F8C6D900D5F3BC /* VariationTwoTableViewCell.swift */; };
 		8CE8A83228FA071B00D5F3BC /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8A83128FA071B00D5F3BC /* CarouselCollectionViewCell.swift */; };
@@ -95,6 +99,10 @@
 		8CA5E61F28FAD8A20054F191 /* VariationTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationTwoCollectionViewCell.swift; sourceTree = "<group>"; };
 		8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		8CC0A54F28DAC7D8001682AE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8CD0686828FDC2E900050C3D /* CarouselTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTwoCollectionViewCell.swift; sourceTree = "<group>"; };
+		8CD0686A28FDC30300050C3D /* CarouselTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTwoTableViewCell.swift; sourceTree = "<group>"; };
+		8CD6CC6D28FE1A86002F6699 /* VariationThreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationThreeTableViewCell.swift; sourceTree = "<group>"; };
+		8CD6CC6F28FE1A9D002F6699 /* VariationThreeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationThreeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8CE8A82228F8501000D5F3BC /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE8A82328F8501000D5F3BC /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE8A82428F8501000D5F3BC /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +161,12 @@
 				94A5C42328EE4F1E002F5E45 /* HomeViewController.swift */,
 				8CE8A82F28F8C6D900D5F3BC /* VariationTwoTableViewCell.swift */,
 				8CA5E61F28FAD8A20054F191 /* VariationTwoCollectionViewCell.swift */,
+				8CD6CC6D28FE1A86002F6699 /* VariationThreeTableViewCell.swift */,
+				8CD6CC6F28FE1A9D002F6699 /* VariationThreeCollectionViewCell.swift */,
 				8CE8A82D28F8BA3D00D5F3BC /* CarouselTableViewCell.swift */,
 				8CE8A83128FA071B00D5F3BC /* CarouselCollectionViewCell.swift */,
+				8CD0686A28FDC30300050C3D /* CarouselTwoTableViewCell.swift */,
+				8CD0686828FDC2E900050C3D /* CarouselTwoCollectionViewCell.swift */,
 				94A5C42528EF93B2002F5E45 /* HomeTextfield+Extension.swift */,
 				8CC0A54928DA6EB3001682AE /* LoginScreen.storyboard */,
 				8C5A084328EE18990093FB9F /* Cart.storyboard */,
@@ -348,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD6CC6E28FE1A86002F6699 /* VariationThreeTableViewCell.swift in Sources */,
 				E071139728DFA47500392291 /* LoginVC.swift in Sources */,
 				94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */,
 				8CA5E62028FAD8A20054F191 /* VariationTwoCollectionViewCell.swift in Sources */,
@@ -364,10 +377,13 @@
 				8C5A084828EE19350093FB9F /* CartViewController.swift in Sources */,
 				8C5A084E28EE23A30093FB9F /* CartTableViewCell.swift in Sources */,
 				94B6248E28E3D5A30029CBA6 /* WelcomeSecondViewController.swift in Sources */,
+				8CD6CC7028FE1A9D002F6699 /* VariationThreeCollectionViewCell.swift in Sources */,
 				C3AF913928DA778800CB4F54 /* LaunchScreenAnimationViewController.swift in Sources */,
+				8CD0686928FDC2E900050C3D /* CarouselTwoCollectionViewCell.swift in Sources */,
 				8CE8A83228FA071B00D5F3BC /* CarouselCollectionViewCell.swift in Sources */,
 				C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */,
 				8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */,
+				8CD0686B28FDC30300050C3D /* CarouselTwoTableViewCell.swift in Sources */,
 				3907C9CE28D804ED00019482 /* SceneDelegate.swift in Sources */,
 				8C5A084C28EE23290093FB9F /* CartTableView+extension.swift in Sources */,
 				94B6249028E3D5DA0029CBA6 /* WelcomePageViewController.swift in Sources */,

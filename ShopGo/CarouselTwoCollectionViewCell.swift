@@ -1,25 +1,25 @@
 //
-//  CarouselCollectionViewCell.swift
+//  CarouselTwoCollectionViewCell.swift
 //  ShopGo
 //
-//  Created by Quratulain on 10/15/22.
+//  Created by Quratulain on 10/17/22.
 //
 
 import UIKit
 
-class CarouselCollectionViewCell: UICollectionViewCell {
+class CarouselTwoCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "CarouselCollectionViewCell"
-    var heartButton = UIButton()
+    static let identifier = "CarouselTwoCollectionViewCell"
+    let heartButton = UIButton()
     let trendingLabel = UILabel()
     let imageView = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        imageSetup()
-        labelSetup()
-        heartButtonSetup()
         constraints()
+        imageSetup()
+        heartButtonSetup()
+        labelSetup()
     }
     // All subview Constraints
     func constraints(){
@@ -29,17 +29,16 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         addSubview(trendingLabel)
-        NSLayoutConstraint.activate([trendingLabel.topAnchor.constraint(equalTo: imageView.topAnchor , constant: 10), trendingLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor , constant: -20), trendingLabel.heightAnchor.constraint(equalToConstant: 50) , trendingLabel.widthAnchor.constraint(equalToConstant: 100) , ])
+        NSLayoutConstraint.activate([trendingLabel.topAnchor.constraint(equalTo: imageView.topAnchor ,constant: 60),trendingLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor , constant: -100), trendingLabel.heightAnchor.constraint(equalToConstant: 100), trendingLabel.widthAnchor.constraint(equalToConstant: 200)])
         addSubview(heartButton)
-        NSLayoutConstraint.activate([heartButton.topAnchor.constraint(equalTo: imageView.topAnchor , constant: 5), heartButton.leadingAnchor.constraint(equalTo: imageView.leadingAnchor , constant: 5), heartButton.heightAnchor.constraint(equalToConstant: 30) , heartButton.widthAnchor.constraint(equalToConstant: 30)])
+        NSLayoutConstraint.activate([heartButton.topAnchor.constraint(equalTo: imageView.topAnchor, constant: 5),heartButton.leadingAnchor.constraint(equalTo: imageView.leadingAnchor , constant: 5), heartButton.heightAnchor.constraint(equalToConstant: 30), heartButton.widthAnchor.constraint(equalToConstant: 30)])
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-extension CarouselCollectionViewCell {
+extension CarouselTwoCollectionViewCell {
     // Image Setup
     func imageSetup() {
         imageView.contentMode = .scaleAspectFill

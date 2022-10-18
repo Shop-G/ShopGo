@@ -8,15 +8,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-   
+    
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(CarouselTableViewCell.self, forCellReuseIdentifier: CarouselTableViewCell.identifier)
         table.register(VariationTwoTableViewCell.self, forCellReuseIdentifier: VariationTwoTableViewCell.identifier)
+        table.register(CarouselTwoTableViewCell.self, forCellReuseIdentifier: CarouselTwoTableViewCell.identifier)
+        table.register(VariationThreeTableViewCell.self, forCellReuseIdentifier: VariationThreeTableViewCell.identifier)
         return table
     }()
     
-    @IBOutlet weak var locationIcon: UIButton!
     @IBOutlet weak var burgerMenu: UIButton!
     @IBOutlet weak var typeText: UITextField!
     @IBOutlet weak var trendingOption: UIButton!
@@ -64,46 +65,49 @@ extension  HomeViewController : UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath) as! VariationTwoTableViewCell
             cell.collectionView.reloadData()
+            cell.recommendedLabel.text = "Recommended for you"
+            cell.allButton.tintColor = .gray
             cell.selectionStyle = .none
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTwoTableViewCell.identifier, for: indexPath) as! CarouselTwoTableViewCell
             cell.collectionView.reloadData()
             cell.selectionStyle = .none
             return cell
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath) as! VariationTwoTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationThreeTableViewCell.identifier, for: indexPath) as! VariationThreeTableViewCell
             cell.collectionView.reloadData()
+            cell.recentLabel.text = "Recently Viewed"
             cell.selectionStyle = .none
             return cell
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath)
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 250
+            return 300
         }
         else if indexPath.row == 2 {
-            return 250
+            return 300
         }
-        return 150
+        return 250
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 150
+        return 200
     }
     
+    // Tableview Setup and Constraints
     func tableViewConfiguration() {
         tableView.showsHorizontalScrollIndicator = false
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         view.addSubview(tableView)
-        
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([tableView.topAnchor.constraint(equalTo: self.typeText.bottomAnchor,constant: 10) , tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -50) , tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 0) , tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: 0)])
+        NSLayoutConstraint.activate([tableView.topAnchor.constraint(equalTo: self.typeText.bottomAnchor,constant: 10) , tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0) , tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 0) , tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: 0)])
     }
 }
 

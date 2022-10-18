@@ -1,16 +1,16 @@
 //
-//  CarouselTableViewCell.swift
+//  CarouselTwoTableViewCell.swift
 //  ShopGo
 //
-//  Created by Quratulain on 10/14/22.
+//  Created by Quratulain on 10/17/22.
 //
 
 import UIKit
 
-class CarouselTableViewCell: UITableViewCell {
+class CarouselTwoTableViewCell: UITableViewCell {
     
-    static let identifier = "CarouselTableViewCell"
-    var CarouselImages : [UIImage] = [ UIImage(named: "Bag5")! ,UIImage(named: "Bag4")!,UIImage(named: "Bag3")!,UIImage(named: "Bag2")!,UIImage(named: "Bag1")!]
+    static let identifier = "CarouselTwoTableViewCell"
+    var CarouselImages : [UIImage] = [ UIImage(named: "Discount1")! ,UIImage(named: "Discount2")!,UIImage(named: "Discount3")!,UIImage(named: "Discount4")!,UIImage(named: "Discount5")!]
     var currentCellIndex = 0
     var timer : Timer?
     var pageControl: UIPageControl = {
@@ -55,21 +55,18 @@ class CarouselTableViewCell: UITableViewCell {
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slideToNext), userInfo: nil, repeats: true)
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: CarouselCollectionViewCell.identifier)
+        collectionView.register(CarouselTwoCollectionViewCell.self, forCellWithReuseIdentifier: CarouselTwoCollectionViewCell.identifier)
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = false
         self.addSubview(collectionView)
         NSLayoutConstraint.activate([collectionView.topAnchor.constraint(equalTo: self.topAnchor), collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor), collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor) , collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor)])
-        
         self.addSubview(pageControl)
         self.pageControl.sizeToFit()
         self.pageControl.numberOfPages = CarouselImages.count
-        
         pageControl.subviews.forEach {
             $0.transform = CGAffineTransform(scaleX: 2, y: 2)
         }
-        
-        NSLayoutConstraint.activate([pageControl.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor,constant: -20), pageControl.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor), pageControl.heightAnchor.constraint(equalToConstant: 60), pageControl.widthAnchor.constraint(equalToConstant: 150)])
+        NSLayoutConstraint.activate([pageControl.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor , constant: -20), pageControl.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor), pageControl.heightAnchor.constraint(equalToConstant: 60) , pageControl.widthAnchor.constraint(equalToConstant: 150)])
     }
     
     @objc func slideToNext() {
@@ -82,20 +79,19 @@ class CarouselTableViewCell: UITableViewCell {
         pageControl.currentPage = currentCellIndex
         collectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .right, animated: true)
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-extension CarouselTableViewCell : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+extension CarouselTwoTableViewCell : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselCollectionViewCell", for: indexPath) as! CarouselCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselTwoCollectionViewCell", for: indexPath) as! CarouselTwoCollectionViewCell
         cell.imageView.image = CarouselImages[indexPath.item]
         return cell
     }
