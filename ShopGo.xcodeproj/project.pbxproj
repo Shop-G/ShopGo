@@ -16,10 +16,13 @@
 		3907C9E328D804EF00019482 /* ShopGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9E228D804EF00019482 /* ShopGoTests.swift */; };
 		3907C9ED28D804EF00019482 /* ShopGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9EC28D804EF00019482 /* ShopGoUITests.swift */; };
 		3907C9EF28D804EF00019482 /* ShopGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */; };
+		402BB8D928F6F5BE00E94A64 /* CardDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402BB8D828F6F5BE00E94A64 /* CardDetails.storyboard */; };
 		402C117328DB0BBB00FC11C2 /* CreateAccountScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */; };
 		403EFF6F28ED92FC00B9C0B5 /* MyProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403EFF6E28ED92FC00B9C0B5 /* MyProfileScreen.storyboard */; };
 		403EFF7128ED936E00B9C0B5 /* MyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403EFF7028ED936E00B9C0B5 /* MyProfileTableViewController.swift */; };
 		406F125628E4B16400D8FD0C /* CreateAccountExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F125528E4B16400D8FD0C /* CreateAccountExtension.swift */; };
+		4074203728F73CCE0072F4B6 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4074203628F73CCE0072F4B6 /* CardDetailsViewController.swift */; };
+		4088D5CF28F87A3900F4FF15 /* CardDetailsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088D5CE28F87A3900F4FF15 /* CardDetailsExtension.swift */; };
 		40FE82FC28DB8DA0009E0072 /* CreateAccountScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FE82FB28DB8DA0009E0072 /* CreateAccountScreen.storyboard */; };
 		40FE82FE28DB8DFE009E0072 /* CreateScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE82FD28DB8DFE009E0072 /* CreateScreenViewController.swift */; };
 		621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */; };
@@ -74,10 +77,16 @@
 		3907C9E228D804EF00019482 /* ShopGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoTests.swift; sourceTree = "<group>"; };
 		3907C9EC28D804EF00019482 /* ShopGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITests.swift; sourceTree = "<group>"; };
 		3907C9EE28D804EF00019482 /* ShopGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		402BB8D528F6F4DA00E94A64 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		402BB8D628F6F4DA00E94A64 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		402BB8D728F6F4DA00E94A64 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		402BB8D828F6F5BE00E94A64 /* CardDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetails.storyboard; sourceTree = "<group>"; };
 		402C117228DB0BBB00FC11C2 /* CreateAccountScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CreateAccountScreen.xcassets; sourceTree = "<group>"; };
 		403EFF6E28ED92FC00B9C0B5 /* MyProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfileScreen.storyboard; sourceTree = "<group>"; };
 		403EFF7028ED936E00B9C0B5 /* MyProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewController.swift; sourceTree = "<group>"; };
 		406F125528E4B16400D8FD0C /* CreateAccountExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountExtension.swift; sourceTree = "<group>"; };
+		4074203628F73CCE0072F4B6 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
+		4088D5CE28F87A3900F4FF15 /* CardDetailsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsExtension.swift; sourceTree = "<group>"; };
 		40FE82FB28DB8DA0009E0072 /* CreateAccountScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountScreen.storyboard; sourceTree = "<group>"; };
 		40FE82FD28DB8DFE009E0072 /* CreateScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScreenViewController.swift; sourceTree = "<group>"; };
 		621772FE28DA44FC001CDFB4 /* TermsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsStoryboard.storyboard; sourceTree = "<group>"; };
@@ -102,9 +111,6 @@
 		C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAnimationViewController.swift; sourceTree = "<group>"; };
 		E0563D8E28F4CA4700C8630C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E071139628DFA47500392291 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		E0AD6D4328F61CE300EB90C1 /* ShopGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShopGo.app; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGo.app"; sourceTree = "<absolute>"; };
-		E0AD6D4428F61CE300EB90C1 /* ShopGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoTests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoTests.xctest"; sourceTree = "<absolute>"; };
-		E0AD6D4528F61CE300EB90C1 /* ShopGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShopGoUITests.xctest; path = "/Users/haroonmaqsood/Desktop/ShopGo/build/Debug-iphoneos/ShopGoUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,9 @@
 				3907C9CA28D804ED00019482 /* ShopGo */,
 				3907C9E128D804EE00019482 /* ShopGoTests */,
 				3907C9EB28D804EF00019482 /* ShopGoUITests */,
+				402BB8D528F6F4DA00E94A64 /* ShopGo.app */,
+				402BB8D628F6F4DA00E94A64 /* ShopGoTests.xctest */,
+				402BB8D728F6F4DA00E94A64 /* ShopGoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +164,9 @@
 				8CC0A54F28DAC7D8001682AE /* CustomButton.swift */,
 				8CA4545828F0D875000B40EA /* CustomButtonView.swift */,
 				3907C9D128D804ED00019482 /* Main.storyboard */,
+				402BB8D828F6F5BE00E94A64 /* CardDetails.storyboard */,
+				4074203628F73CCE0072F4B6 /* CardDetailsViewController.swift */,
+				4088D5CE28F87A3900F4FF15 /* CardDetailsExtension.swift */,
 				C3AF913628DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard */,
 				C3AF913828DA778800CB4F54 /* LaunchScreenAnimationViewController.swift */,
 				C33B9D2128DCC66500DCA1DB /* OtpScreen.storyboard */,
@@ -205,7 +217,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGo;
-			productReference = E0AD6D4328F61CE300EB90C1 /* ShopGo.app */;
+			productReference = 402BB8D528F6F4DA00E94A64 /* ShopGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3907C9DD28D804EE00019482 /* ShopGoTests */ = {
@@ -224,7 +236,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGoTests;
-			productReference = E0AD6D4428F61CE300EB90C1 /* ShopGoTests.xctest */;
+			productReference = 402BB8D628F6F4DA00E94A64 /* ShopGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3907C9E728D804EF00019482 /* ShopGoUITests */ = {
@@ -243,7 +255,7 @@
 			packageProductDependencies = (
 			);
 			productName = ShopGoUITests;
-			productReference = E0AD6D4528F61CE300EB90C1 /* ShopGoUITests.xctest */;
+			productReference = 402BB8D728F6F4DA00E94A64 /* ShopGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -299,6 +311,7 @@
 				C3AF913728DA76E900CB4F54 /* LaunchScreenStoryboard.storyboard in Resources */,
 				3907C9D828D804EE00019482 /* LaunchScreen.storyboard in Resources */,
 				402C117328DB0BBB00FC11C2 /* CreateAccountScreen.xcassets in Resources */,
+				402BB8D928F6F5BE00E94A64 /* CardDetails.storyboard in Resources */,
 				8C5A084428EE18990093FB9F /* Cart.storyboard in Resources */,
 				621772FF28DA44FC001CDFB4 /* TermsStoryboard.storyboard in Resources */,
 				3907C9D528D804EE00019482 /* Assets.xcassets in Resources */,
@@ -334,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E071139728DFA47500392291 /* LoginVC.swift in Sources */,
+				4074203728F73CCE0072F4B6 /* CardDetailsViewController.swift in Sources */,
 				94B6248C28E3D34E0029CBA6 /* WelcomeViewController.swift in Sources */,
 				94A5C42628EF93B2002F5E45 /* HomeTextfield+Extension.swift in Sources */,
 				40FE82FE28DB8DFE009E0072 /* CreateScreenViewController.swift in Sources */,
@@ -350,6 +364,7 @@
 				C33B9D2428DCC67700DCA1DB /* OtpScreenViewController.swift in Sources */,
 				8C93154F28E629780020CEBA /* Textfield+extension.swift in Sources */,
 				3907C9CE28D804ED00019482 /* SceneDelegate.swift in Sources */,
+				4088D5CF28F87A3900F4FF15 /* CardDetailsExtension.swift in Sources */,
 				8C5A084C28EE23290093FB9F /* CartTableView+extension.swift in Sources */,
 				94B6249028E3D5DA0029CBA6 /* WelcomePageViewController.swift in Sources */,
 				8CC0A55028DAC7D8001682AE /* CustomButton.swift in Sources */,
