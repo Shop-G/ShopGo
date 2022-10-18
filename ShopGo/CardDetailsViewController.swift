@@ -23,7 +23,7 @@ class CardDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hideKeyboardTappedAccount(tap: CardDetailEnum.tap.tapGesture)
         self.navigationItem.title = "Card Details"
        
         // Listen the keyboards events

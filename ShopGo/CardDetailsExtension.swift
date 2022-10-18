@@ -7,11 +7,21 @@
 
 import Foundation
 import UIKit
+enum CardDetailEnum: String , CaseIterable{
+    case tap
+    var tapGesture: UITapGestureRecognizer {
+        switch self{
+        case .tap:
+            let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CardDetailsViewController.dismissKeyboard))
+            return tap
+        }
+    }
+}
+
 extension CardDetailsViewController : UITextFieldDelegate {
-  
+    
     //Hide keyboard
-    func hideKeyboardTappedAccount() {
-        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CardDetailsViewController.dismissKeyboard))
+    func hideKeyboardTappedAccount(tap: UITapGestureRecognizer) {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
@@ -26,8 +36,9 @@ extension CardDetailsViewController : UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-   
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
         var maxLength : Int = 0
         
         if textField == usernameTextField {
@@ -41,8 +52,9 @@ extension CardDetailsViewController : UITextFieldDelegate {
         } else if textField == cvvTextField {
             maxLength = 3
         }
+        // unchangeable due to the encapsulation from this function on textField
         let currentString: NSString = textField.text! as NSString
-                let newString: NSString =  currentString.replacingCharacters(in: range, with: string) as NSString
-                return newString.length <= maxLength
-        }
+        let newString: NSString =  currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
+    }
 }
