@@ -26,8 +26,8 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         addSubview(imageView)
         imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 10).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10).isActive = true
         addSubview(trendingLabel)
         NSLayoutConstraint.activate([trendingLabel.topAnchor.constraint(equalTo: imageView.topAnchor , constant: 10), trendingLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor , constant: -20), trendingLabel.heightAnchor.constraint(equalToConstant: 50) , trendingLabel.widthAnchor.constraint(equalToConstant: 100) , ])
         addSubview(heartButton)

@@ -26,8 +26,8 @@ class CarouselTwoCollectionViewCell: UICollectionViewCell {
         addSubview(imageView)
         imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 10).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10).isActive = true
         addSubview(trendingLabel)
         NSLayoutConstraint.activate([trendingLabel.topAnchor.constraint(equalTo: imageView.topAnchor ,constant: 60),trendingLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor , constant: -100), trendingLabel.heightAnchor.constraint(equalToConstant: 100), trendingLabel.widthAnchor.constraint(equalToConstant: 200)])
         addSubview(heartButton)
@@ -57,7 +57,7 @@ extension CarouselTwoCollectionViewCell {
     }
     // Trending Label Setup
     func labelSetup() {
-        trendingLabel.text = "Trending Products"
+        trendingLabel.text = "20% Discount on your 1st order"
         trendingLabel.textColor = UIColor.white
         trendingLabel.textAlignment = .center
         trendingLabel.numberOfLines = 3

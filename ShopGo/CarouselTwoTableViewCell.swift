@@ -59,7 +59,7 @@ class CarouselTwoTableViewCell: UITableViewCell {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = false
         self.addSubview(collectionView)
-        NSLayoutConstraint.activate([collectionView.topAnchor.constraint(equalTo: self.topAnchor), collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor), collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor) , collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor)])
+        NSLayoutConstraint.activate([collectionView.topAnchor.constraint(equalTo: self.topAnchor), collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor), collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor), collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor)])
         self.addSubview(pageControl)
         self.pageControl.sizeToFit()
         self.pageControl.numberOfPages = CarouselImages.count
@@ -98,14 +98,7 @@ extension CarouselTwoTableViewCell : UICollectionViewDelegate , UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let frameSize = collectionView.frame.size
-        return CGSize(width: frameSize.width - 10, height: frameSize.height - 50)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return CGSize(width: frameSize.width, height: frameSize.height - 50)
     }
 }
+
