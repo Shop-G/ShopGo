@@ -6,9 +6,18 @@
 //
 
 import UIKit
+
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var locationIcon: UIButton!
+    private let tableView: UITableView = {
+        let table = UITableView()
+        table.register(CarouselTableViewCell.self, forCellReuseIdentifier: CarouselTableViewCell.identifier)
+        table.register(VariationTwoTableViewCell.self, forCellReuseIdentifier: VariationTwoTableViewCell.identifier)
+        table.register(CarouselTwoTableViewCell.self, forCellReuseIdentifier: CarouselTwoTableViewCell.identifier)
+        table.register(VariationThreeTableViewCell.self, forCellReuseIdentifier: VariationThreeTableViewCell.identifier)
+        return table
+    }()
+    
     @IBOutlet weak var burgerMenu: UIButton!
     @IBOutlet weak var typeText: UITextField!
     @IBOutlet weak var trendingOption: UIButton!
@@ -18,7 +27,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        placeLeftImageToTextField()
+        tableViewConfiguration()
+        tableView.delegate = self
+        tableView.dataSource = self
+        configureTextfieldIcons()
         modification()
         self.navigationItem.setHidesBackButton(true, animated: false)
     }
@@ -32,6 +44,70 @@ class HomeViewController: UIViewController {
     @IBAction func womenBtn(_ sender: Any) {
     }
     @IBAction func childrenBtn(_ sender: Any) {
+    }
+}
+
+// TableView Setup
+extension  HomeViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
+            cell.collectionView.reloadData()
+            cell.selectionStyle = .none
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath) as! VariationTwoTableViewCell
+            cell.collectionView.reloadData()
+            cell.recommendedLabel.text = "Recommended for you"
+            cell.allButton.tintColor = .gray
+            cell.selectionStyle = .none
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTwoTableViewCell.identifier, for: indexPath) as! CarouselTwoTableViewCell
+            cell.collectionView.reloadData()
+            cell.selectionStyle = .none
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationThreeTableViewCell.identifier, for: indexPath) as! VariationThreeTableViewCell
+            cell.collectionView.reloadData()
+            cell.recentLabel.text = "Recently Viewed"
+            cell.selectionStyle = .none
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: VariationTwoTableViewCell.identifier, for: indexPath)
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 300
+        }
+        else if indexPath.row == 2 {
+            return 300
+        }
+        return 250
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 200
+    }
+    
+    // Tableview Setup and Constraints
+    func tableViewConfiguration() {
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([tableView.topAnchor.constraint(equalTo: self.typeText.bottomAnchor,constant: 10) , tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0) , tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 0) , tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: 0)])
     }
 }
 
